@@ -10,8 +10,8 @@ time_table_drop = "DROP TABLE IF EXISTS time"
 
 songplay_table_create = ("""CREATE TABLE IF NOT EXISTS songplays (
     songplay_id SERIAL PRIMARY KEY, 
-    start_time BIGINT, 
-    user_id INT,
+    start_time BIGINT NOT NULL, 
+    user_id INT NOT NULL,
     level VARCHAR,
     song_id VARCHAR,
     artist_id VARCHAR,
@@ -58,59 +58,32 @@ time_table_create = ("""CREATE TABLE IF NOT EXISTS time (
 
 songplay_table_insert = ("""INSERT INTO songplays (start_time, user_id, level, song_id, artist_id, session_id, location, user_agent)
 VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
-ON CONFLICT (songplay_id)
-DO UPDATE
-SET start_time = EXCLUDED.start_time,
-user_id = EXCLUDED.user_id,
-level = EXCLUDED.level,
-song_id = EXCLUDED.song_id,
-artist_id = EXCLUDED.artist_id,
-session_id = EXCLUDED.session_id,
-location = EXCLUDED.location,
-user_agent = EXCLUDED.user_agent
 """)
 
 user_table_insert = ("""INSERT INTO users (user_id, first_name, last_name, gender, level)
 VALUES (%s, %s, %s, %s, %s)
 ON CONFLICT (user_id)
 DO UPDATE
-SET first_name = EXCLUDED.first_name,
-last_name = EXCLUDED.last_name,
-gender = EXCLUDED.gender,
-level = EXCLUDED.level
+SET level = EXCLUDED.level
 """)
 
 song_table_insert = ("""INSERT INTO songs (song_id, title, artist_id, year, duration)
 VALUES (%s, %s, %s, %s, %s)
 ON CONFLICT (song_id)
-DO UPDATE
-SET title = EXCLUDED.title,
-artist_id = EXCLUDED.artist_id,
-year = EXCLUDED.year,
-duration = EXCLUDED.duration
+DO NOTHING
 """)
 
 artist_table_insert = ("""INSERT INTO artists (artist_id, name, location, latitude, longitude)
 VALUES (%s, %s, %s, %s, %s)
 ON CONFLICT (artist_id)
-DO UPDATE
-SET name = EXCLUDED.name,
-location = EXCLUDED.location,
-latitude = EXCLUDED.latitude,
-longitude = EXCLUDED.longitude
+DO NOTHING
 """)
 
 
 time_table_insert = ("""INSERT INTO time (start_time, hour, day, week, month, year, weekday)
 VALUES (%s, %s, %s, %s, %s, %s, %s)
 ON CONFLICT (start_time)
-DO UPDATE
-SET hour = EXCLUDED.hour,
-day = EXCLUDED.day,
-week = EXCLUDED.week,
-month = EXCLUDED.month,
-year = EXCLUDED.year,
-weekday = EXCLUDED.weekday
+DO NOTHING
 """)
 
 # FIND SONGS

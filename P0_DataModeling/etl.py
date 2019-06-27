@@ -6,6 +6,16 @@ from sql_queries import *
 
 
 def process_song_file(cur, filepath):
+    """
+    Description: Process the JSON song data and insert it into table
+
+    Arguments:
+        cur: the cursor object
+        filepath: the path in which the JSON file lies in
+
+    Returns:
+        None
+    """
     # open song file
     df = pd.read_json(filepath, lines=True)
 
@@ -19,6 +29,16 @@ def process_song_file(cur, filepath):
 
 
 def process_log_file(cur, filepath):
+    """
+    Description: Process the JSON log data and insert it into table
+
+    Arguments:
+        cur: the cursor object
+        filepath: the path in which the JSON file lies in
+
+    Returns:
+        None
+    """
     # open log file
     df = pd.read_json(filepath, lines=True)
 
@@ -52,7 +72,6 @@ def process_log_file(cur, filepath):
         
         # get songid and artistid from song and artist tables
         results = cur.execute(song_select, (row.song, row.artist, row.length))
-        print('{}-{}-{}'.format(row.song, row.artist, row.length))
         songid, artistid = results if results else None, None
 
         # insert songplay record
@@ -61,6 +80,19 @@ def process_log_file(cur, filepath):
 
 
 def process_data(cur, conn, filepath, func):
+    """
+    Description: Collect all files in file path, call the function to insert the data into table
+
+    Arguments:
+        cur: the cursor object
+        conn: the connection object
+        filepath: the directory in which JSON data lies in
+        func: function do the ETL stuff
+
+    Returns:
+        cur: the cursor object
+        conn: the connection object
+    """
     # get all files matching extension from directory
     all_files = []
     for root, dirs, files in os.walk(filepath):
