@@ -52,6 +52,7 @@ def process_log_file(cur, filepath):
         
         # get songid and artistid from song and artist tables
         results = cur.execute(song_select, (row.song, row.artist, row.length))
+        print('{}-{}-{}'.format(row.song, row.artist, row.length))
         songid, artistid = results if results else None, None
 
         # insert songplay record
