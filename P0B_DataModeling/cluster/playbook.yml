@@ -1,0 +1,21 @@
+---
+- hosts: cassandras
+  remote_user: vagrant
+  become: True
+  tasks:
+  - name: install JDK
+    command: echo "install JDK"
+  - name: check Java version
+    command: echo "check Java version"
+  - name: check Python version
+    command: echo "check Python version"
+  - name: install cassandra
+    command: echo "install cassandra"
+  - name: configure seed nodes
+    command: echo "configure seed nodes"
+  - name: configure ordinary nodes
+    command: echo "configure ordinary nodes"
+  - name: restart cassandra
+    command: echo "restart cassandra"
+  - name: output nodetool info
+    command: echo "output nodetool info"

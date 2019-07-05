@@ -1,0 +1,6 @@
+[cassandras]
+cassandra1 ansible_host=127.0.0.1 ansible_port=2200
+cassandra2 ansible_host=127.0.0.1 ansible_port=2201
+cassandra3 ansible_host=127.0.0.1 ansible_port=2202
+cassandra4 ansible_host=127.0.0.1 ansible_port=2203
+cassandra5 ansible_host=127.0.0.1 ansible_port=2204

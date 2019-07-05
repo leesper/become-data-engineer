@@ -1,0 +1,35 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  # Use the same key for each machine
+  config.ssh.insert_key = false
+
+  config.vm.define "cassandra1" do |cassandra1|
+    cassandra1.vm.box = "ubuntu/trusty64"
+    cassandra1.vm.network "private_network", ip: "192.168.22.2"
+  end
+
+  config.vm.define "cassandra2" do |cassandra2|
+    cassandra2.vm.box = "ubuntu/trusty64"
+    cassandra2.vm.network "private_network", ip: "192.168.22.3"
+  end
+
+  config.vm.define "cassandra3" do |cassandra3|
+    cassandra3.vm.box = "ubuntu/trusty64"
+    cassandra3.vm.network "private_network", ip: "192.168.22.4"
+  end
+
+  config.vm.define "cassandra4" do |cassandra4|
+    cassandra4.vm.box = "ubuntu/trusty64"
+    cassandra4.vm.network "private_network", ip: "192.168.22.5"
+  end
+
+  config.vm.define "cassandra5" do |cassandra5|
+    cassandra5.vm.box = "ubuntu/trusty64"
+    cassandra5.vm.network "private_network", ip: "192.168.22.6"
+  end
+end
