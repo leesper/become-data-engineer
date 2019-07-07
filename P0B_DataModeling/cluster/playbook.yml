@@ -1,21 +1,19 @@
 ---
 - hosts: cassandras
   remote_user: vagrant
-  become: True
   tasks:
-  - name: install JDK
-    command: echo "install JDK"
-  - name: check Java version
-    command: echo "check Java version"
-  - name: check Python version
-    command: echo "check Python version"
-  - name: install cassandra
-    command: echo "install cassandra"
-  - name: configure seed nodes
-    command: echo "configure seed nodes"
-  - name: configure ordinary nodes
-    command: echo "configure ordinary nodes"
-  - name: restart cassandra
-    command: echo "restart cassandra"
-  - name: output nodetool info
-    command: echo "output nodetool info"
+  - debug: var=ansible_enp0s8.ipv4.address
+  - name: install OpenJDK 8
+    become: True
+    apt: 
+      name: openjdk-8-jdk 
+      update_cache: yes 
+      cache_valid_time: 3600
+  - name: extract Cassandra 3.11 into /home/vagrant
+    unarchive:
+      src: apache-cassandra-3.11.4-bin.tar.gz
+      dest: /home/vagrant
+  - name: copy cassandra.yaml with everything configured
+    template: src=templates/cassandra.yaml.j2 dest=/home/vagrant/apache-cassandra-3.11.4/conf/cassandra.yaml
+  - name: start cassandra
+    command: /home/vagrant/apache-cassandra-3.11.4/bin/cassandra -fR
