@@ -794,38 +794,37 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCwu1j+zU7sBKMVGkMqaFh8U+vuKriKkxjzqJKtnAcr
 [[0;32m  OK  [0m] Closed LXD - unix socket.
 [[0;32m  OK  [0m] Closed Socket activation for snappy daemon.
 [[0;32m  OK  [0m] Closed ACPID Listen Socket.
-hutdown.
+[[0;32m  OK  [0m] Closed D-Bus System Message Bus Socket.
+[[0;32m  OK  [0m] Stopped target System Initialization.
+[[0;32m  OK  [0m] Stopped target Encrypted Volumes.
+         Stopping Load/Save Random Seed...
+[[0;32m  OK  [0m] Stopped target Swap.
+[[0;32m  OK  [0m] Stopped Commit a transient machine-id on disk.
+[[0;32m  OK  [0m] Stopped Create Volatile Files and Directories.
+[[0;32m  OK  [0m] Stopped Load/Save Random Seed.
 [[0;32m  OK  [0m] Stopped Login to default iSCSI targets.
          Stopping iSCSI initiator daemon (iscsid)...
-[[0;32m  OK  [0m] Stopped Create Volatile Files and Directories.
 [[0;32m  OK  [0m] Stopped iSCSI initiator daemon (iscsid).
 [[0;32m  OK  [0m] Stopped target Network is Online.
-[[0;32m  OK  [0m] Stopped Initial cloud-init job (metadata service crawler).
 [[0;32m  OK  [0m] Stopped target Network.
+[[0;32m  OK  [0m] Stopped Initial cloud-init job (metadata service crawler).
          Stopping Raise network interfaces...
 [[0;32m  OK  [0m] Stopped Raise network interfaces.
 [[0;32m  OK  [0m] Stopped target Network (Pre).
 [[0;32m  OK  [0m] Stopped Initial cloud-init job (pre-networking).
-[[0;32m  OK  [0m] Stopped target Local File Systems.
-         Unmounting /vagrant...
-         Unmounting /run/user/1000...
 [[0;32m  OK  [0m] Stopped Apply Kernel Variables.
 [[0;32m  OK  [0m] Stopped Load Kernel Modules.
-[[0;32m  OK  [0m] Unmounted /vagrant.
+[[0;32m  OK  [0m] Stopped target Local File Systems.
+         Unmounting /run/user/1000...
+         Unmounting /vagrant...
 [[0;32m  OK  [0m] Unmounted /run/user/1000.
+[[0;32m  OK  [0m] Unmounted /vagrant.
 [[0;32m  OK  [0m] Reached target Unmount All Filesystems.
 [[0;32m  OK  [0m] Stopped target Local File Systems (Pre).
-[[0;32m  OK  [0m] Stopped Create Static Device Nodes in /dev.
+[[0;32m  OK  [0m] Stopped Remount Root and Kernel File Systems.
          Stopping Monitoring of LVM2 mirrors... dmeventd or progress polling...
-[[0;32m  OK  [0m] Stopped Remount Root and Kernel File Systems.
-[[0;32m  OK  [0m] Reached target Shutdown.
-[ 2480.279573] reboot: Power down
-All Filesystems.
-[[0;32m  OK  [0m] Stopped target Local File Systems (Pre).
 [[0;32m  OK  [0m] Stopped Create Static Device Nodes in /dev.
-[[0;32m  OK  [0m] Stopped Remount Root and Kernel File Systems.
 [[0;32m  OK  [0m] Reached target Shutdown.
-[ 2452.555998] reboot: Power down
-topped Create Static Device Nodes in /dev.
-[[0;32m  OK  [0m] Reached target Shutdown.
+[ 2507.829453] reboot: Power down
+ Shutdown.
 [ 2425.321120] reboot: Power down
