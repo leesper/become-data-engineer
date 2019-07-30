@@ -4,6 +4,10 @@ import configparser
 # CONFIG
 config = configparser.ConfigParser()
 config.read('dwh.cfg')
+IAM_ROLE_ARN = config.get('IAM_ROLE', 'ARN')
+LOG_DATA = config.get('S3', 'LOG_DATA')
+LOG_JSON_PATH = config.get('S3', 'LOG_JSONPATH')
+SONG_DATA = config.get('S3', 'SONG_DATA')
 
 # DROP TABLES
 
@@ -36,7 +40,7 @@ CREATE TABLE IF NOT EXISTS staging_events (
     status INT,
     ts BIGINT,
     userAgent VARCHAR,
-    userId INT)
+    userId INT);
 """)
 
 staging_songs_table_create = ("""
@@ -50,7 +54,7 @@ CREATE TABLE IF NOT EXISTS staging_songs (
     song_id VARCHAR,
     title VARCHAR,
     duration NUMERIC,
-    year INT)
+    year INT);
 """)
 
 songplay_table_create = ("""
@@ -63,7 +67,7 @@ CREATE TABLE IF NOT EXISTS songplays (
     artist_id VARCHAR,
     session_id INT,
     location VARCHAR,
-    user_agent VARCHAR)
+    user_agent VARCHAR);
 """)
 
 user_table_create = ("""
@@ -72,7 +76,7 @@ CREATE TABLE IF NOT EXISTS users (
     first_name VARCHAR,
     last_name VARCHAR,
     gender CHAR(1),
-    level VARCHAR)
+    level VARCHAR);
 """)
 
 song_table_create = ("""
@@ -81,7 +85,7 @@ CREATE TABLE IF NOT EXISTS songs (
     title VARCHAR,
     artist_id VARCHAR,
     year INT,
-    duration NUMERIC)
+    duration NUMERIC);
 """)
 
 artist_table_create = ("""
@@ -90,7 +94,7 @@ CREATE TABLE IF NOT EXISTS artists (
     name VARCHAR,
     location VARCHAR,
     latitude NUMERIC,
-    longitude NUMERIC)
+    longitude NUMERIC);
 """)
 
 time_table_create = ("""
@@ -101,32 +105,102 @@ CREATE TABLE IF NOT EXISTS time (
     week INT,
     month INT,
     year INT,
-    weekday INT)
+    weekday INT);
 """)
 
 # STAGING TABLES
 
 staging_events_copy = ("""
-""").format()
+COPY staging_events FROM {}
+CREDENTIALS 'aws_iam_role={}'
+REGION 'us-east-1' COMPUPDATE OFF
+JSON {};
+""").format(LOG_DATA, IAM_ROLE_ARN, LOG_JSON_PATH)
 
 staging_songs_copy = ("""
-""").format()
+COPY staging_songs FROM {}
+CREDENTIALS 'aws_iam_role={}'
+REGION 'us-east-1' COMPUPDATE OFF
+JSON AUTO;
+""").format(SONG_DATA, IAM_ROLE_ARN)
 
 # FINAL TABLES
 
 songplay_table_insert = ("""
+INSERT INTO songplays (
+    start_time, 
+    user_id, 
+    level, 
+    song_id, 
+    artist_id, 
+    session_id, 
+    location, 
+    user_agent)
+    SELECT ts, userId, level, song_id, artist_id, session_id, location, userAgent 
+    FROM staging_events se
+    JOIN staging_songs ss
+    ON se.song = ss.title 
+    AND se.length = ss.duration 
+    AND se.artist = ss.artist_name
+    AND se.page = 'NextSong';
 """)
 
 user_table_insert = ("""
+INSERT INTO users (
+    user_id,
+    first_name,
+    last_name,
+    gender,
+    level)
+    SELECT userId, firstName, lastName, gender, level 
+    FROM staging_events
+    WHERE page = 'NextSong';
 """)
 
 song_table_insert = ("""
+INSERT INTO songs (
+    song_id,
+    title,
+    artist_id,
+    year,
+    duration)
+    SELECT song_id, title, artist_id, year, duration 
+    FROM staging_events se
+    JOIN staging_songs ss
+    ON se.song = ss.title
+    AND se.artist = ss.artist_name
+    AND se.page = 'NextSong';
 """)
 
 artist_table_insert = ("""
+INSERT INTO artists (
+    artist_id,
+    name,
+    location,
+    latitude,
+    longitude)
+    SELECT artist_id, artist_name, artist_location, artist_latitude, artist_longitude
+    FROM staging_songs;
 """)
 
 time_table_insert = ("""
+INSERT INTO time (
+    start_time,
+    hour,
+    day,
+    week,
+    month,
+    year,
+    weekday)
+    SELECT ts, 
+    EXTRACT(HOUR FROM TO_TIMESTAMP(ts, 'YYYY-MM-DD')),
+    EXTRACT(DAY FROM TO_TIMESTAMP(ts, 'YYYY-MM-DD')),
+    EXTRACT(WEEK FROM TO_TIMESTAMP(ts, 'YYYY-MM-DD')),
+    EXTRACT(MONTH FROM TO_TIMESTAMP(ts, 'YYYY-MM-DD')),
+    EXTRACT(YEAR FROM TO_TIMESTAMP(ts, 'YYYY-MM-DD')),
+    EXTRACT(DOW FROM TO_TIMESTAMP(ts, 'YYYY-MM-DD'))
+    FROM staging_events
+    WHERE page = 'NextSong';
 """)
 
 # QUERY LISTS
