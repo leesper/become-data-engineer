@@ -23,83 +23,84 @@ time_table_drop = "DROP TABLE IF EXISTS time"
 
 staging_events_table_create= ("""
 CREATE TABLE IF NOT EXISTS staging_events (
-    artist VARCHAR,
-    auth VARCHAR,
-    firstName VARCHAR,
-    gender VARCHAR,
+    artist VARCHAR(512),
+    auth VARCHAR(64),
+    firstName VARCHAR(32),
+    gender VARCHAR(2),
     itemInSession INT,
-    lastName VARCHAR,
+    lastName VARCHAR(32),
     length NUMERIC,
-    level VARCHAR,
-    location VARCHAR,
-    method VARCHAR,
-    page VARCHAR,
+    level VARCHAR(8),
+    location VARCHAR(512),
+    method VARCHAR(8),
+    page VARCHAR(16),
     registration NUMERIC,
     sessionId INT,
-    song VARCHAR,
+    song VARCHAR(512),
     status INT,
     ts BIGINT,
-    userAgent VARCHAR,
+    userAgent VARCHAR(256),
     userId INT);
 """)
 
 staging_songs_table_create = ("""
 CREATE TABLE IF NOT EXISTS staging_songs (
     num_songs INT,
-    artist_id VARCHAR,
+    artist_id VARCHAR(32),
     artist_latitude NUMERIC,
     artist_longitude NUMERIC,
-    artist_location VARCHAR,
-    artist_name VARCHAR,
-    song_id VARCHAR,
-    title VARCHAR,
+    artist_location VARCHAR(512),
+    artist_name VARCHAR(512),
+    song_id VARCHAR(32),
+    title VARCHAR(512),
     duration NUMERIC,
     year INT);
 """)
 
 songplay_table_create = ("""
 CREATE TABLE IF NOT EXISTS songplays (
-    songplay_id IDENTITY(0,1) PRIMARY KEY, 
-    start_time BIGINT NOT NULL, 
+    songplay_id INT IDENTITY(0,1) PRIMARY KEY, 
+    start_time TIMESTAMP NOT NULL sortkey, 
     user_id INT NOT NULL,
-    level VARCHAR,
-    song_id VARCHAR,
-    artist_id VARCHAR,
+    level VARCHAR(8),
+    song_id VARCHAR(32),
+    artist_id VARCHAR(32) distkey,
     session_id INT,
-    location VARCHAR,
-    user_agent VARCHAR);
+    location VARCHAR(512),
+    user_agent VARCHAR(256));
 """)
 
 user_table_create = ("""
 CREATE TABLE IF NOT EXISTS users (
     user_id INT PRIMARY KEY,
-    first_name VARCHAR,
-    last_name VARCHAR,
+    first_name VARCHAR(32),
+    last_name VARCHAR(32),
     gender CHAR(1),
-    level VARCHAR);
+    level VARCHAR(8))
+diststyle all;
 """)
 
 song_table_create = ("""
 CREATE TABLE IF NOT EXISTS songs (
-    song_id VARCHAR PRIMARY KEY,
-    title VARCHAR,
-    artist_id VARCHAR,
+    song_id VARCHAR PRIMARY KEY sortkey,
+    title VARCHAR(512),
+    artist_id VARCHAR(32),
     year INT,
     duration NUMERIC);
 """)
 
 artist_table_create = ("""
 CREATE TABLE IF NOT EXISTS artists (
-    artist_id VARCHAR PRIMARY KEY,
-    name VARCHAR,
-    location VARCHAR,
+    artist_id VARCHAR PRIMARY KEY sortkey distkey,
+    name VARCHAR(512),
+    location VARCHAR(512),
     latitude NUMERIC,
     longitude NUMERIC);
 """)
 
 time_table_create = ("""
 CREATE TABLE IF NOT EXISTS time (
-    start_time BIGINT PRIMARY KEY,
+    start_time TIMESTAMP PRIMARY KEY sortkey,
     hour INT,
     day INT,
     week INT,
@@ -111,17 +112,17 @@ CREATE TABLE IF NOT EXISTS time (
 # STAGING TABLES
 
 staging_events_copy = ("""
-COPY staging_events FROM {}
+COPY staging_events FROM '{}'
 CREDENTIALS 'aws_iam_role={}'
-REGION 'us-east-1' COMPUPDATE OFF
-JSON {};
+REGION 'us-west-2'
+JSON '{}';
 """).format(LOG_DATA, IAM_ROLE_ARN, LOG_JSON_PATH)
 
 staging_songs_copy = ("""
-COPY staging_songs FROM {}
+COPY staging_songs FROM '{}'
 CREDENTIALS 'aws_iam_role={}'
-REGION 'us-east-1' COMPUPDATE OFF
-JSON AUTO;
+REGION 'us-west-2'
+JSON 'auto';
 """).format(SONG_DATA, IAM_ROLE_ARN)
 
 # FINAL TABLES
@@ -136,7 +137,14 @@ INSERT INTO songplays (
     session_id, 
     location, 
     user_agent)
-    SELECT ts, userId, level, song_id, artist_id, session_id, location, userAgent 
+    SELECT TIMESTAMP 'epoch' + ts/1000 * interval '1 second' AS start_time, 
+    userId, 
+    level, 
+    song_id, 
+    artist_id, 
+    sessionId, 
+    location, 
+    userAgent 
     FROM staging_events se
     JOIN staging_songs ss
     ON se.song = ss.title 
@@ -152,7 +160,11 @@ INSERT INTO users (
     last_name,
     gender,
     level)
-    SELECT userId, firstName, lastName, gender, level 
+    SELECT DISTINCT userId, 
+    firstName, 
+    lastName, 
+    gender, 
+    level 
     FROM staging_events
     WHERE page = 'NextSong';
 """)
@@ -164,7 +176,11 @@ INSERT INTO songs (
     artist_id,
     year,
     duration)
-    SELECT song_id, title, artist_id, year, duration 
+    SELECT DISTINCT song_id, 
+    title, 
+    artist_id, 
+    year, 
+    duration 
     FROM staging_events se
     JOIN staging_songs ss
     ON se.song = ss.title
@@ -179,7 +195,11 @@ INSERT INTO artists (
     location,
     latitude,
     longitude)
-    SELECT artist_id, artist_name, artist_location, artist_latitude, artist_longitude
+    SELECT DISTINCT artist_id, 
+    artist_name, 
+    artist_location, 
+    artist_latitude, 
+    artist_longitude
     FROM staging_songs;
 """)
 
@@ -192,13 +212,13 @@ INSERT INTO time (
     month,
     year,
     weekday)
-    SELECT ts, 
-    EXTRACT(HOUR FROM TO_TIMESTAMP(ts, 'YYYY-MM-DD')),
-    EXTRACT(DAY FROM TO_TIMESTAMP(ts, 'YYYY-MM-DD')),
-    EXTRACT(WEEK FROM TO_TIMESTAMP(ts, 'YYYY-MM-DD')),
-    EXTRACT(MONTH FROM TO_TIMESTAMP(ts, 'YYYY-MM-DD')),
-    EXTRACT(YEAR FROM TO_TIMESTAMP(ts, 'YYYY-MM-DD')),
-    EXTRACT(DOW FROM TO_TIMESTAMP(ts, 'YYYY-MM-DD'))
+    SELECT DISTINCT TIMESTAMP 'epoch' + ts/1000 * interval '1 second' AS start_time, 
+    EXTRACT(HOUR FROM start_time),
+    EXTRACT(DAY FROM start_time),
+    EXTRACT(WEEK FROM start_time),
+    EXTRACT(MONTH FROM start_time),
+    EXTRACT(YEAR FROM start_time),
+    EXTRACT(DOW FROM start_time)
     FROM staging_events
     WHERE page = 'NextSong';
 """)
