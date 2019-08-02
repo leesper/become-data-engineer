@@ -4,18 +4,44 @@ from sql_queries import copy_table_queries, insert_table_queries
 
 
 def load_staging_tables(cur, conn):
+    """
+    Copy from S3 and creating stage_events and stage_songs tables
+
+    Parameters:
+        cur: cursor
+        conn: DB connection
+    Returns:
+        None
+    """
     for query in copy_table_queries:
         cur.execute(query)
         conn.commit()
 
 
 def insert_tables(cur, conn):
+    """
+    Insert from staging tables into fact and dimension tables
+
+    Parameters:
+        cur: cursor
+        conn: DB connection
+    Returns:
+        None
+    """
     for query in insert_table_queries:
         cur.execute(query)
         conn.commit()
 
 
 def main():
+    """
+    Connect to DB, dropping and creating tables
+
+    Parameters:
+        None
+    Returns:
+        None
+    """
     config = configparser.ConfigParser()
     config.read('dwh.cfg')
 

@@ -129,8 +129,8 @@ ORDER BY 2 DESC;
 ```
 day_type | count
 -------+-------
- workday  |  5702
- weekend  |  1011
+ workday  |  6120
+ weekend  |  1077
 ```
 
 So people listen to music in workday more often.

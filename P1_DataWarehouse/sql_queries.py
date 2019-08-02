@@ -47,8 +47,8 @@ staging_songs_table_create = ("""
 CREATE TABLE IF NOT EXISTS staging_songs (
     num_songs INT,
     artist_id VARCHAR(32),
-    artist_latitude NUMERIC,
-    artist_longitude NUMERIC,
+    artist_latitude FLOAT,
+    artist_longitude FLOAT,
     artist_location VARCHAR(512),
     artist_name VARCHAR(512),
     song_id VARCHAR(32),
@@ -63,8 +63,8 @@ CREATE TABLE IF NOT EXISTS songplays (
     start_time TIMESTAMP NOT NULL sortkey, 
     user_id INT NOT NULL,
     level VARCHAR(8),
-    song_id VARCHAR(32),
-    artist_id VARCHAR(32) distkey,
+    song_id VARCHAR(32) NOT NULL,
+    artist_id VARCHAR(32) NOT NULL distkey,
     session_id INT,
     location VARCHAR(512),
     user_agent VARCHAR(256));
@@ -84,7 +84,7 @@ song_table_create = ("""
 CREATE TABLE IF NOT EXISTS songs (
     song_id VARCHAR PRIMARY KEY sortkey,
     title VARCHAR(512),
-    artist_id VARCHAR(32),
+    artist_id VARCHAR(32) NOT NULL,
     year INT,
     duration NUMERIC);
 """)
@@ -94,8 +94,8 @@ CREATE TABLE IF NOT EXISTS artists (
     artist_id VARCHAR PRIMARY KEY sortkey distkey,
     name VARCHAR(512),
     location VARCHAR(512),
-    latitude NUMERIC,
-    longitude NUMERIC);
+    latitude FLOAT,
+    longitude FLOAT);
 """)
 
 time_table_create = ("""
@@ -127,6 +127,7 @@ JSON 'auto';
 
 # FINAL TABLES
 
+# JOIN staging_events and staging_songs to INSERT data INTO songplays table
 songplay_table_insert = ("""
 INSERT INTO songplays (
     start_time, 
@@ -184,8 +185,7 @@ INSERT INTO songs (
     FROM staging_events se
     JOIN staging_songs ss
     ON se.song = ss.title
-    AND se.artist = ss.artist_name
-    AND se.page = 'NextSong';
+    AND se.artist = ss.artist_name;
 """)
 
 artist_table_insert = ("""
@@ -212,15 +212,14 @@ INSERT INTO time (
     month,
     year,
     weekday)
-    SELECT DISTINCT TIMESTAMP 'epoch' + ts/1000 * interval '1 second' AS start_time, 
+    SELECT start_time, 
     EXTRACT(HOUR FROM start_time),
     EXTRACT(DAY FROM start_time),
     EXTRACT(WEEK FROM start_time),
     EXTRACT(MONTH FROM start_time),
     EXTRACT(YEAR FROM start_time),
     EXTRACT(DOW FROM start_time)
-    FROM staging_events
-    WHERE page = 'NextSong';
+    FROM songplays;
 """)
 
 # QUERY LISTS
