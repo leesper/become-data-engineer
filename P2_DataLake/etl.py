@@ -2,7 +2,7 @@ import configparser
 from datetime import datetime
 import os
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import udf, col
+from pyspark.sql.functions import udf, col, monotonically_increasing_id
 from pyspark.sql.functions import year, month, dayofmonth, hour, weekofyear, date_format
 from pyspark.sql.types import DoubleType
 
@@ -93,13 +93,23 @@ def process_log_data(spark, input_data, output_data):
     time_table.write.partitionBy('year', 'month').parquet(output_data+'/time')
 
     # read in song data to use for songplays table
-    song_df = 
+    song_df = spark.read.json(input_data + '/song-data/song_data/*/*/*/*.json')
 
     # extract columns from joined song and log datasets to create songplays table 
-    songplays_table = 
+    joined_df = df.join(song_df, df.artist==song_df.artist_name, 'left')
+    songplays_table = joined_df.select(
+        monotonically_increasing_id().alias('songplay_id'), 
+        'start_time', 
+        col('userId').alias('user_id'), 
+        'level', 
+        'song_id', 
+        'artist_id', 
+        col('sessionId').alias('session_id'), 
+        'location', 
+        col('userAgent').alias('user_agent'))
 
     # write songplays table to parquet files partitioned by year and month
-    songplays_table
+    songplays_table.write.partitionBy('year', 'month').parquet(output_data+'/songplays')
 
 
 def main():
