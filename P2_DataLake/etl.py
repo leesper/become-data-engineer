@@ -15,6 +15,14 @@ config = configparser.ConfigParser()
 
 
 def create_spark_session():
+    """
+    Create spark session
+
+    Parameters:
+        None
+    Returns:
+        spark session instance
+    """
     spark = SparkSession \
         .builder \
         .config("spark.jars.packages", "org.apache.hadoop:hadoop-aws:2.7.0") \
@@ -23,6 +31,16 @@ def create_spark_session():
 
 
 def process_song_data(spark, input_data, output_data):
+    """
+    Read song data, process them into tables and write to parquet files
+
+    Parameters:
+        spark: spark session
+        input_data: input data path
+        output_data: output data path
+    Returns:
+        None
+    """
     # get filepath to song data file
     song_data = input_data + '/song-data/song_data/*/*/*/*.json'
     
@@ -52,6 +70,16 @@ def process_song_data(spark, input_data, output_data):
 
 
 def process_log_data(spark, input_data, output_data):
+    """
+    Read log data, process them into tables and write to parquet files
+
+    Parameters:
+        spark: spark session
+        input_data: input data path
+        output_data: output data path
+    Returns:
+        None
+    """
     # get filepath to log data file
     log_data = input_data + '/log-data/*.json'
 
@@ -117,6 +145,14 @@ def process_log_data(spark, input_data, output_data):
 
 
 def main():
+    """
+    Program main entrance
+
+    Parameters:
+        None
+    Returns:
+        None
+    """
     spark = create_spark_session()
     # input_data = "s3a://udacity-dend/"
     input_data = "/home/workspace/data"
