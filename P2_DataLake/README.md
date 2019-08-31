@@ -67,58 +67,14 @@ This project contains following files:
 - README.md: specifications about the project(this file)
 - etl.py: an ETL script running on Spark
 
-## Step 1: 
+## Step 1: Get Access and Secret Key
 
+Go to the AWS website, from "My Security Credentials" on the right top of the page, copy and paste the access key and secret access key into dl.cfg.
 
-## Step 2: 
+## Step 2: Create an S3 bucket for output
 
+Go to the AWS S3 service, create a bucket called datalake-project.
 
-# Example Queries(FIXME)
+## Step 3: Activate the ETL processing
 
-Do users like to pay for the music or listen for free?
-
-```sql
-SELECT level, COUNT(*) FROM songplays GROUP BY level;
-```
-
-```
-level | count
--------+-------
- free  |  1206
- paid  |  5507
-```
-
-More people are likely to pay for the music, so which gender is more likely to pay?
-
-```sql
-SELECT gender, songplays.level, COUNT(*) FROM songplays JOIN users ON songplays.user_id = users.user_id GROUP BY gender, songplays.level;
-```
-
-```
-gender | level | count
---------+-------+-------
- F      | free  |   585
- F      | paid  |  4225
- M      | free  |   621
- M      | paid  |  1282
-```
-
-Both of the gender are willing to pay, females are more generous. Do people listen to music in workday or weekend?
-
-```sql
-SELECT CASE WHEN weekday=0 OR weekday=6 THEN 'weekend' ELSE 'workday' END AS day_type, COUNT(*)
-FROM songplays sp
-JOIN time t 
-ON sp.start_time=t.start_time
-GROUP BY day_type
-ORDER BY 2 DESC;
-```
-
-```
-day_type | count
--------+-------
- workday  |  6120
- weekend  |  1077
-```
-
-So people listen to music in workday more often.
+Upload the etl.py to the cluster, then run `python etl.py` at the main node. Or you can create a jupyter notebook, copy and paste all content in etl.py and run it interatively in notebook.

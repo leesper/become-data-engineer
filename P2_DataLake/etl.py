@@ -9,9 +9,9 @@ from pyspark.sql.types import DoubleType
 
 config = configparser.ConfigParser()
 
-# config.read('dl.cfg')
-# os.environ['AWS_ACCESS_KEY_ID']=config['AWS_ACCESS_KEY_ID']
-# os.environ['AWS_SECRET_ACCESS_KEY']=config['AWS_SECRET_ACCESS_KEY']
+config.read('dl.cfg')
+os.environ['AWS_ACCESS_KEY_ID']=config['AWS_ACCESS_KEY_ID']
+os.environ['AWS_SECRET_ACCESS_KEY']=config['AWS_SECRET_ACCESS_KEY']
 
 
 def create_spark_session():
@@ -42,7 +42,7 @@ def process_song_data(spark, input_data, output_data):
         None
     """
     # get filepath to song data file
-    song_data = input_data + '/song-data/song_data/*/*/*/*.json'
+    song_data = input_data + '/song_data/*/*/*/*.json'
     
     # read song data file
     df = spark.read.json(song_data)
@@ -81,7 +81,7 @@ def process_log_data(spark, input_data, output_data):
         None
     """
     # get filepath to log data file
-    log_data = input_data + '/log-data/*.json'
+    log_data = input_data + '/log_data/*.json'
 
     # read log data file
     df = spark.read.json(log_data)
@@ -154,9 +154,8 @@ def main():
         None
     """
     spark = create_spark_session()
-    # input_data = "s3a://udacity-dend/"
-    input_data = "/home/workspace/data"
-    output_data = "/home/workspace/output"
+    input_data = "s3a://udacity-dend/"
+    output_data = "s3a://datalake-project/output"
     
     process_song_data(spark, input_data, output_data)    
     process_log_data(spark, input_data, output_data)
