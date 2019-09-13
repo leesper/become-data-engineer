@@ -8,9 +8,8 @@ class LoadDimensionOperator(BaseOperator):
 
     @apply_defaults
     def __init__(self,
-                 # Define your operators params (with defaults) here
-                 # Example:
-                 # conn_id = your-connection-name
+                 redshift_conn_id,
+                 table,
                  *args, **kwargs):
 
         super(LoadDimensionOperator, self).__init__(*args, **kwargs)
@@ -20,3 +19,5 @@ class LoadDimensionOperator(BaseOperator):
 
     def execute(self, context):
         self.log.info('LoadDimensionOperator not implemented yet')
+        # load records using sql_queries
+        # insert them into corresponding tables
