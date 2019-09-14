@@ -63,7 +63,7 @@ load_user_dimension_table = LoadDimensionOperator(
 
 load_song_dimension_table = LoadDimensionOperator(
     redshift_conn_id='redshift',
-    table='songs'
+    table='songs',
     replace=True,
     task_id='Load_song_dim_table',
     dag=dag
@@ -71,7 +71,7 @@ load_song_dimension_table = LoadDimensionOperator(
 
 load_artist_dimension_table = LoadDimensionOperator(
     redshift_conn_id='redshift',
-    table='artists'
+    table='artists',
     replace=True,
     task_id='Load_artist_dim_table',
     dag=dag
@@ -87,7 +87,9 @@ load_time_dimension_table = LoadDimensionOperator(
 
 run_quality_checks = DataQualityOperator(
     task_id='Run_data_quality_checks',
-    dag=dag
+    dag=dag,
+    redshift_conn_id='redshift',
+    tables=['staging_events', 'staging_songs', 'users', 'songs', 'artists', 'time']
 )
 
 end_operator = DummyOperator(task_id='Stop_execution',  dag=dag)
