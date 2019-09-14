@@ -22,7 +22,7 @@ default_args = {
 dag = DAG('udac_example_dag',
           default_args=default_args,
           description='Load and transform data in Redshift with Airflow',
-          schedule_interval='0 * * * *'
+          schedule_interval='@hourly'
         )
 
 start_operator = DummyOperator(task_id='Begin_execution',  dag=dag)
@@ -33,6 +33,7 @@ stage_events_to_redshift = StageToRedshiftOperator(
     table='staging_events',
     s3_addr='s3://udacity-dend/log_data',
     task_id='Stage_events',
+    provide_context=True,
     dag=dag
 )
 
@@ -46,26 +47,40 @@ stage_songs_to_redshift = StageToRedshiftOperator(
 )
 
 load_songplays_table = LoadFactOperator(
+    redshift_conn_id='redshift',
+    table='songplays',
     task_id='Load_songplays_fact_table',
     dag=dag
 )
 
 load_user_dimension_table = LoadDimensionOperator(
+    redshift_conn_id='redshift',
+    table='users',
+    replace=True,
     task_id='Load_user_dim_table',
     dag=dag
 )
 
 load_song_dimension_table = LoadDimensionOperator(
+    redshift_conn_id='redshift',
+    table='songs'
+    replace=True,
     task_id='Load_song_dim_table',
     dag=dag
 )
 
 load_artist_dimension_table = LoadDimensionOperator(
+    redshift_conn_id='redshift',
+    table='artists'
+    replace=True,
     task_id='Load_artist_dim_table',
     dag=dag
 )
 
 load_time_dimension_table = LoadDimensionOperator(
+    redshift_conn_id='redshift',
+    table='time',
+    replace=True,
     task_id='Load_time_dim_table',
     dag=dag
 )

@@ -26,23 +26,18 @@ class StageToRedshiftOperator(BaseOperator):
         self.redshift_conn_id = redshift_conn_id
         self.table = table
         self.s3_addr = s3_addr
+        self.execution_date = kwargs['execution_date']
 
     def execute(self, context):
         self.log.info('StageToRedshiftOperator for {}'.format(self.table))
 
-        # create the target table
-        pg_hook = PostgresHook(self.redshift_conn_id)
-        lookup = {
-            'staging_events': SqlQueries.staging_events_create,
-            'staging_songs': SqlQueries.staging_songs_create,
-        }
-        pg_hook.run(lookup[self.table])
-        self.log.info('{} created'.format(self.table))
-
         # load from S3 to redshift
         a_hook = AwsHook(self.aws_conn_id)
         credentials = a_hook.get_credentials()
-        copy_stmt = staging_copy.format(self.table, self.s3_addr, 
+        s3_addr = self.s3_addr
+        if self.table == 'staging_events':
+            s3_addr += f"/{self.execution_date.year}/{self.execution_date.month}"
+        copy_stmt = staging_copy.format(self.table, s3_addr, 
         credentials.access_key, credentials.secret_key)
         pg_hook.run(copy_stmt)
         self.log.info('{} loaded'.format(self.table))
