@@ -32,10 +32,11 @@ class StageToRedshiftOperator(BaseOperator):
 
         # create the target table
         pg_hook = PostgresHook(self.redshift_conn_id)
-        if self.table == 'staging_events':
-            pg_hook.run(SqlQueries.staging_events_create)
-        else:
-            pg_hook.run(SqlQueries.staging_songs_create)
+        lookup = {
+            'staging_events': SqlQueries.staging_events_create,
+            'staging_songs': SqlQueries.staging_songs_create,
+        }
+        pg_hook.run(lookup[self.table])
         self.log.info('{} created'.format(self.table))
 
         # load from S3 to redshift

@@ -17,7 +17,8 @@ class LoadFactOperator(BaseOperator):
         self.table = table
 
     def execute(self, context):
-        self.log.info('LoadFactOperator not implemented yet')
+        self.log.info('LoadFactOperator for {}'.format(self.table))
+
         # get records using sql_queries.songplay_table_insert
         pg_hook = PostgresHook(self.redshift_conn_id)
         records = pg_hook.get_records(SqlQueries.songplay_table_insert)
@@ -25,4 +26,4 @@ class LoadFactOperator(BaseOperator):
 
         # insert records into songplays
         pg_hook.insert_rows(self.table, records)
-        self.log.info('{} rows inserted into {}'.format(len(records), self.table))
+        self.log.info('inserted into {}'.format(self.table))
