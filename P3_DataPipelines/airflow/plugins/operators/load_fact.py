@@ -1,6 +1,7 @@
 from airflow.hooks.postgres_hook import PostgresHook
 from airflow.models import BaseOperator
 from airflow.utils.decorators import apply_defaults
+from helpers import SqlQueries
 
 class LoadFactOperator(BaseOperator):
 
@@ -23,6 +24,7 @@ class LoadFactOperator(BaseOperator):
         pg_hook = PostgresHook(self.redshift_conn_id)
         records = pg_hook.get_records(SqlQueries.songplay_table_insert)
         self.log.info('get {} records from {}'.format(len(records), self.table))
+        self.log.info('{}'.format(records[0]))
 
         # insert records into songplays
         pg_hook.insert_rows(self.table, records)

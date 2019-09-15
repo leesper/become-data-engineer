@@ -1,6 +1,7 @@
 from airflow.hooks.postgres_hook import PostgresHook
 from airflow.models import BaseOperator
 from airflow.utils.decorators import apply_defaults
+from helpers import SqlQueries
 
 class LoadDimensionOperator(BaseOperator):
 
@@ -33,5 +34,7 @@ class LoadDimensionOperator(BaseOperator):
         self.log.info('get {} records from {}'.format(len(records), self.table))
 
         # insert them into corresponding tables
-        pg_hook.insert_rows(self.table, records, replace=self.replace)
+        if self.replace:
+            pg_hook.run(f"DELETE FROM {self.table}")
+        pg_hook.insert_rows(self.table, records)
         self.log.info('inserted into {}'.format(self.table))

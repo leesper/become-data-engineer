@@ -23,10 +23,10 @@ class StageToRedshiftOperator(BaseOperator):
     def execute(self, context):
         staging_copy = ("""
         COPY {} FROM '{}'
-        ACCESS_KEY_ID '{{}}'
-        SECRET_ACCESS_KEY '{{}}'
+        ACCESS_KEY_ID '{}'
+        SECRET_ACCESS_KEY '{}'
         REGION 'us-west-2'
-        JSON 'auto';
+        JSON '{}';
         """)
         
         execution_date = context['execution_date']
@@ -36,10 +36,16 @@ class StageToRedshiftOperator(BaseOperator):
         a_hook = AwsHook(self.aws_conn_id)
         credentials = a_hook.get_credentials()
         s3_addr = self.s3_addr
+        year = execution_date.format('YYYY', formatter='alternative')
+        month = execution_date.format('MM', formatter='alternative')
         if self.table == 'staging_events':
-            s3_addr += f"/{execution_date.year}/{execution_date.month}"
+            s3_addr += f"/{year}/{month}"
         copy_stmt = staging_copy.format(self.table, s3_addr, 
-        credentials.access_key, credentials.secret_key)
+        credentials.access_key, credentials.secret_key, 
+        's3://udacity-dend/log_json_path.json' if self.table == 'staging_events' else 'auto')
+        
+        self.log.info('copy command {}'.format(copy_stmt))
+        
         pg_hook = PostgresHook('redshift')
         pg_hook.run(copy_stmt)
         self.log.info('{} loaded'.format(self.table))
