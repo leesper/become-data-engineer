@@ -1,8 +1,8 @@
 # Project Scope
 
-定义项目的目标领域
+This capstone project focuses on the open source software hosted in Github. It will do some interesting analysis about the data of them. I will first collect related datasets, extract some samples and do some EDAs locally in order to understand the data and find some insights. Second, I will upload the datasets into AWS S3 bucket, using Apache Airflow to create a pipeline using Spark on EMR to load them into staging tables on redshift and perform ETLs forming a series of target tables. 
 
-项目的最终用例（数据可视化面板）
+The end case of this project will be a data visualization dashboard showing the results, with the help of some front-end and backend techniques.
 
 # Gather Data
 
