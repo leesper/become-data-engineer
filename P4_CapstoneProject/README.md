@@ -1,3 +1,5 @@
+# A Free World in Github
+
 # Project Scope
 
 This capstone project focuses on the open source software hosted in Github. It will do some interesting analysis about the data of them. I will first collect related datasets, extract some samples and do some EDAs locally in order to understand the data and find some insights. Second, I will upload the datasets into AWS S3 bucket, using Apache Airflow to create a pipeline using Spark on EMR to load them into staging tables on redshift and perform ETLs forming a series of target tables. 
@@ -6,9 +8,7 @@ The end case of this project will be a data visualization dashboard showing the 
 
 # Gather Data
 
-从至少2个源收集数据，要求数据至少100w行，多格式。
-    Libraries.io Open Source Repository and Dependency Metadata https://zenodo.org/record/1068916
-    Github Developer API https://developer.github.com/v3/
+I find the public dataset from [awesome public datasets](https://github.com/awesomedata/awesome-public-datasets) in the portion of **Software**. The datasets are of 13GB and in CSV format and come from [Libraries.io Open Source Repository and Dependency Metadata](https://zenodo.org/record/1068916). This data is collected from GitLab, Github and BitBucket. Considering that this project only interests in repositories on Github, we also take the [Github Developer API](https://developer.github.com/v3/) as a supplement.
 
 # Explore & Assess Data
 
