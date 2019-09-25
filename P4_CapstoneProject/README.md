@@ -12,22 +12,27 @@ I find the public dataset from [awesome public datasets](https://github.com/awes
 
 # Explore & Assess Data
 
-通过探索性数据分析对数据样本进行初步研究
-
-对数据进行质量检查，文档记录数据清洗加工的处理过程
-
+下载好的数据上传到S3
+启动EMR集群，通过notebook，采用探索性数据分析对数据进行EDA
+    对数据进行质量检查，文档记录数据清洗加工的处理过程
+    获取star数量最高的Top 10项目
 通过对数据的研究确认要从Github API获取和采集哪些数据（JSON格式）
+    编写程序从Github API采集TOP10项目JSON格式数据
+    将JSON文件上传到S3
 
 # Conceptual Data Model
 
-解释所选择数据模型的合理性
-
+对数据进行模型设计，确定事实表和维度表，解释所选择数据模型的合理性
+    复习数据仓库相关知识点
 根据数据模型进行数据管道概念设计
 
 # ETL Data Modeling
 
 数据管道编排
-    从Github API采集目标数据
+    弄清S3/Redshift/EMR之间的权限访问控制（IAM）
+    弄清Airflow如何与EMR中的Spark交互
+    从S3读入数据文件形成staging表
+    通过staging筛选出Github项目，然后构建facts & dimensions
     在数据管道中进行数据质量检查
         完整性检查
         单元测试代码
@@ -53,6 +58,7 @@ notes:
     解释数据的更新频率
     每日七点定时运行如何实现
     后端开发
+        web框架技术选型
         运行哪些查询？
     前端开发
     云端部署
