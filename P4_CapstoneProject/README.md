@@ -15,9 +15,9 @@ I find the public dataset from [awesome public datasets](https://github.com/awes
 下载好的数据上传到S3
 启动EMR集群，通过notebook，采用探索性数据分析对数据进行EDA
     对数据进行质量检查，文档记录数据清洗加工的处理过程
-    获取star数量最高的Top 10项目
+    确认要从Github API补充什么数据
 通过对数据的研究确认要从Github API获取和采集哪些数据（JSON格式）
-    编写程序从Github API采集TOP10项目JSON格式数据
+    编写程序从Github API采集JSON格式数据
     将JSON文件上传到S3
 
 # Conceptual Data Model
