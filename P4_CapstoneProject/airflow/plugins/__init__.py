@@ -1,6 +1,7 @@
 from airflow.plugins_manager import AirflowPlugin
 
 import operators
+import helpers
 
 # Defining the plugin class
 class CapstonePlugin(AirflowPlugin):
@@ -10,4 +11,7 @@ class CapstonePlugin(AirflowPlugin):
         operators.LoadFactOperator,
         operators.LoadDimensionOperator,
         operators.QualityCheckOperator,
+    ]
+    helpers = [
+        helpers.SqlQueries
     ]

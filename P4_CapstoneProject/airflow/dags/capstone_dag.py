@@ -98,6 +98,14 @@ load_stars_dimension_table = LoadDimensionOperator(
     dag=dag
 )
 
+load_time_dimension_table = LoadDimensionOperator(
+    redshift_conn_id='redshift',
+    table='time',
+    replace=True,
+    task_id='Load_time_dim_table',
+    dag=dag
+)
+
 run_quality_checks = QualityCheckOperator(
     task_id='Run_data_quality_checks',
     dag=dag,
@@ -129,5 +137,6 @@ start_operator \
         load_versions_dimension_table, 
         load_dependencies_dimension_table, 
         load_stars_dimension_table,
+        load_time_dimension_table,
     ] >> run_quality_checks >> end_operator
                 
