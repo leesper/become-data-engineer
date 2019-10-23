@@ -119,6 +119,7 @@ run_quality_checks = QualityCheckOperator(
         'versions', 
         'dependencies', 
         'projects', 
+        'time',
         'stars',
     ]
 )

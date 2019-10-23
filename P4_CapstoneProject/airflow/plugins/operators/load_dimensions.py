@@ -26,7 +26,7 @@ class LoadDimensionOperator(BaseOperator):
         lookup = {
             'versions': SqlQueries.version_table_insert,
             'projects': SqlQueries.project_table_insert,
-            'dependencies': SqlQueries.artist_table_insert,
+            'dependencies': SqlQueries.dependency_table_insert,
             'time': SqlQueries.time_table_insert,
             'stars': SqlQueries.star_table_insert,
         }
