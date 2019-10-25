@@ -1,5 +1,25 @@
 # fixme
 class SqlQueries:
+    repository_table_select = ("""
+        SELECT
+            "Repository ID" AS repository_id,
+            "Repository Stars Count" AS stars,
+            "Repository Forks Count" AS forks,
+            AS watchers,
+            AS contributors,
+            AS version_id,
+            AS project_id,
+            AS create_time,
+            AS dependency_id,
+            AS star_id,
+            AS size,
+            AS repo,
+    """)
+    version_table_select = ("""""")
+    project_table_select = ("""""")
+    dependency_table_select = ("""""")
+    star_table_select = ("""""")
+    time_table_select = ("""""")
     songplay_table_insert = ("""
         SELECT
                 md5(events.sessionid || events.start_time) songplay_id,
