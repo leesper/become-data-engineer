@@ -12,7 +12,7 @@ class QualityCheckOperator(BaseOperator):
                  tables,
                  *args, **kwargs):
 
-        super(DataQualityOperator, self).__init__(*args, **kwargs)
+        super(QualityCheckOperator, self).__init__(*args, **kwargs)
         self.redshift_conn_id = redshift_conn_id
         self.tables = tables
 
