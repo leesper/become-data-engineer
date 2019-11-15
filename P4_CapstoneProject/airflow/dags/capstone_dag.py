@@ -1,6 +1,6 @@
 from airflow import DAG
 from airflow.operators.dummy_operator import DummyOperator
-from airflow.operators import StageToRedshiftOperator, LoadFactOperator, LoadDimensionOperator, QualityCheckOperator
+from operators import StageToRedshiftOperator, LoadFactOperator, LoadDimensionOperator, QualityCheckOperator
 from datetime import datetime, timedelta
 
 default_args = {
@@ -8,7 +8,7 @@ default_args = {
     'start_date': datetime(2018, 11, 3),
     'depends_on_past': False,
     'retries': 3,
-    'retry_delay': timedelta(minutes=5),
+    'retry_delay': timedelta(minutes=3),
     'catchup': False,
     'email_on_retry': False,
 }
@@ -26,7 +26,7 @@ stage_versions_to_redshift = StageToRedshiftOperator(
     aws_conn_id='aws_credentials',
     redshift_conn_id='redshift',
     table='staging_versions',
-    s3_addr='s3://dend-capstone-lkj/versions-1.0.0-2017-06-15.csv',
+    s3_addr='s3://dend-capstone-lkj/versions.json',
     task_id='Stage_versions',
     provide_context=True,
     dag=dag
@@ -45,17 +45,8 @@ stage_projects_to_redshift = StageToRedshiftOperator(
     aws_conn_id='aws_credentials',
     redshift_conn_id='redshift',
     table='staging_projects',
-    s3_addr='s3://dend-capstone-lkj/projects_with_repository_fields-1.0.0-2017-06-15.csv',
+    s3_addr='s3://dend-capstone-lkj/projects_with_repository.csv',
     task_id='Stage_projects',
-    dag=dag
-)
-
-stage_stars_to_redshift = StageToRedshiftOperator(
-    aws_conn_id='aws_credentials',
-    redshift_conn_id='redshift',
-    table='staging_stars',
-    s3_addr='s3://dend-capstone-lkj/star.json',
-    task_id='Stage_stars',
     dag=dag
 )
 
@@ -90,14 +81,6 @@ load_dependencies_dimension_table = LoadDimensionOperator(
     dag=dag
 )
 
-load_stars_dimension_table = LoadDimensionOperator(
-    redshift_conn_id='redshift',
-    table='stars',
-    replace=True,
-    task_id='Load_stars_dim_table',
-    dag=dag
-)
-
 load_time_dimension_table = LoadDimensionOperator(
     redshift_conn_id='redshift',
     table='time',
@@ -114,13 +97,11 @@ run_quality_checks = QualityCheckOperator(
         'staging_versions', 
         'staging_dependencies', 
         'staging_projects', 
-        'staging_stars',
         'repositories', 
         'versions', 
         'dependencies', 
         'projects', 
-        'time',
-        'stars',
+        'time'
     ]
 )
 
@@ -130,14 +111,12 @@ start_operator \
     >> [
         stage_versions_to_redshift, 
         stage_dependencies_to_redshift, 
-        stage_projects_to_redshift, 
-        stage_stars_to_redshift
+        stage_projects_to_redshift 
     ] >> load_repositories_fact_table \
     >> [
         load_projects_dimension_table, 
         load_versions_dimension_table, 
         load_dependencies_dimension_table, 
-        load_stars_dimension_table,
-        load_time_dimension_table,
+        load_time_dimension_table
     ] >> run_quality_checks >> end_operator
                 

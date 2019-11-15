@@ -1,0 +1,32 @@
+[2019-11-11 18:02:58,237] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: capstone_dag.Stage_stars 2018-11-03T14:00:00+00:00 [queued]>
+[2019-11-11 18:02:58,241] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: capstone_dag.Stage_stars 2018-11-03T14:00:00+00:00 [queued]>
+[2019-11-11 18:02:58,241] {taskinstance.py:838} INFO - 
+--------------------------------------------------------------------------------
+[2019-11-11 18:02:58,241] {taskinstance.py:839} INFO - Starting attempt 1 of 4
+[2019-11-11 18:02:58,241] {taskinstance.py:840} INFO - 
+--------------------------------------------------------------------------------
+[2019-11-11 18:02:58,246] {taskinstance.py:859} INFO - Executing <Task(StageToRedshiftOperator): Stage_stars> on 2018-11-03T14:00:00+00:00
+[2019-11-11 18:02:58,246] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'capstone_dag', 'Stage_stars', '2018-11-03T14:00:00+00:00', '--job_id', '171', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/capstone_dag.py', '--cfg_path', '/var/folders/8q/nyxhvd6d55nfqjdbrybk6jpw0000gn/T/tmpxv0rg3gt']
+[2019-11-11 18:02:58,991] {base_task_runner.py:115} INFO - Job 171: Subtask Stage_stars /Users/likejun/anaconda3/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2019-11-11 18:02:58,991] {base_task_runner.py:115} INFO - Job 171: Subtask Stage_stars   """)
+[2019-11-11 18:02:59,108] {base_task_runner.py:115} INFO - Job 171: Subtask Stage_stars [2019-11-11 18:02:59,107] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-11-11 18:02:59,435] {base_task_runner.py:115} INFO - Job 171: Subtask Stage_stars [2019-11-11 18:02:59,434] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-11 18:02:59,448] {base_task_runner.py:115} INFO - Job 171: Subtask Stage_stars [2019-11-11 18:02:59,448] {cli.py:516} INFO - Running <TaskInstance: capstone_dag.Stage_stars 2018-11-03T14:00:00+00:00 [running]> on host likejundeMacBook-Pro.local
+[2019-11-11 18:02:59,454] {staging_redshift.py:33} INFO - StageToRedshiftOperator for staging_stars on 2018-11-03T14:00:00+00:00
+[2019-11-11 18:02:59,461] {staging_redshift.py:44} INFO - copy command 
+        COPY staging_stars FROM 's3://dend-capstone-lkj/star.json'
+        ACCESS_KEY_ID 'AKIA2ZJJD7TPQUMASLMS'
+        SECRET_ACCESS_KEY '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'
+        REGION 'us-west-2'
+        JSON 'auto' TIMEFORMAT 'YYYY-MM-DDTHH:MI:SSZ';
+        
+[2019-11-11 18:02:59,463] {logging_mixin.py:95} INFO - [[34m2019-11-11 18:02:59,463[0m] {[34mbase_hook.py:[0m84} INFO[0m - Using connection to: [1mid: redshift. Host: redshift-cluster.chjcdyihped1.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: XXXXXXXX, extra: {}[0m[0m
+[2019-11-11 18:03:00,954] {logging_mixin.py:95} INFO - [[34m2019-11-11 18:03:00,954[0m] {[34mdbapi_hook.py:[0m171} INFO[0m - 
+        COPY staging_stars FROM 's3://dend-capstone-lkj/star.json'
+        ACCESS_KEY_ID 'AKIA2ZJJD7TPQUMASLMS'
+        SECRET_ACCESS_KEY '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'
+        REGION 'us-west-2'
+        JSON 'auto' TIMEFORMAT 'YYYY-MM-DDTHH:MI:SSZ';
+        [0m
+[2019-11-11 18:03:02,168] {staging_redshift.py:48} INFO - staging_stars loaded
+[2019-11-11 18:03:03,240] {logging_mixin.py:95} INFO - [[34m2019-11-11 18:03:03,239[0m] {[34mlocal_task_job.py:[0m105} INFO[0m - Task exited with return code 0[0m

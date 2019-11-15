@@ -39,7 +39,7 @@ class StageToRedshiftOperator(BaseOperator):
         
         copy_stmt = staging_copy.format(self.table, s3_addr, 
         credentials.access_key, credentials.secret_key, 
-        "JSON 'auto'" if self.table == 'staging_stars' else 'CSV')
+        "JSON 'auto'" if self.table == 'staging_versions' else "IGNOREHEADER 1 CSV")
         
         self.log.info('copy command {}'.format(copy_stmt))
         

@@ -1,4 +1,4 @@
-CREATE TABLE public.repository_fact (
+CREATE TABLE IF NOT EXISTS public.repository_fact (
     repository_id INT4 NOT NULL,
     stars INT4,
     forks INT4,
@@ -13,25 +13,25 @@ CREATE TABLE public.repository_fact (
     PRIMARY KEY(repository_id)
 );
 
-CREATE TABLE public.version_dim (
+CREATE TABLE IF NOT EXISTS public.version_dim (
     version_id INT4 NOT NULL,
     number INT4,
     publish_time TIMESTAMP NOT NULL,
     PRIMARY KEY(version_id)
 );
 
-CREATE TABLE public.project_dim (
+CREATE TABLE IF NOT EXISTS public.project_dim (
     project_id INT4 NOT NULL,
     platform VARCHAR(256),
     name VARCHAR(256),
     host VARCHAR(256),
     language VARCHAR(256),
     license VARCHAR(256),
-    status VARCHAR(256)
+    status VARCHAR(256),
     PRIMARY KEY(project_id)
 );
 
-CREATE TABLE public.dependency_dim (
+CREATE TABLE IF NOT EXISTS public.dependency_dim (
     dependency_id INT4 NOT NULL,
     dependency_name VARCHAR(256),
     dependency_platform VARCHAR(256),
@@ -39,16 +39,7 @@ CREATE TABLE public.dependency_dim (
     PRIMARY KEY(dependency_id)
 );
 
-CREATE TABLE public.star_dim (
-    repo VARCHAR(256),
-    starred_at TIMESTAMP NOT NULL,
-    login VARCHAR(256),
-    html_url VARCHAR(256),
-    type VARCHAR(256),
-    site_admin VARCHAR(256)
-);
-
-CREATE TABLE public.time_dim (
+CREATE TABLE IF NOT EXISTS public.time_dim (
     create_time TIMESTAMP NOT NULL,
     "hour" INT4,
 	"day" INT4,
@@ -58,7 +49,7 @@ CREATE TABLE public.time_dim (
     PRIMARY KEY(create_time)
 );
 
-CREATE TABLE public.staging_dependencies (
+CREATE TABLE IF NOT EXISTS public.staging_dependencies (
     ID INT4,
     Platform VARCHAR(256),
     "Project Name" VARCHAR(256),
@@ -69,21 +60,21 @@ CREATE TABLE public.staging_dependencies (
     "Dependency Platform" VARCHAR(256),
     "Dependency Kind" VARCHAR(256),
     "Optional Dependency" VARCHAR(256),
-    "Dependency Requirements" VARCHAR(256),
+    "Dependency Requirements" VARCHAR(1024),
     "Dependency Project ID" INT4
 );
 
-CREATE TABLE public.staging_projects (
+CREATE TABLE IF NOT EXISTS public.staging_projects (
     ID INT4,
     Platform VARCHAR(256),
     Name VARCHAR(256),
     "Created Timestamp" TIMESTAMP,
     "Updated Timestamp" TIMESTAMP,
-    Description VARCHAR(256),
-    Keywords VARCHAR(256),
-    "Homepage URL" VARCHAR(256),
+    Description VARCHAR(4096),
+    Keywords VARCHAR(8192),
+    "Homepage URL" VARCHAR(1024),
     Licenses VARCHAR(256),
-    "Repository URL" VARCHAR(256),
+    "Repository URL" VARCHAR(1024),
     "Versions Count" INT4,
     SourceRank INT4,
     "Latest Release Publish Timestamp" TIMESTAMP,
@@ -97,20 +88,20 @@ CREATE TABLE public.staging_projects (
     "Repository ID" INT4,
     "Repository Host Type" VARCHAR(256),
     "Repository Name with Owner" VARCHAR(256),
-    "Repository Description" VARCHAR(256),
-    "Repository Fork?" BOOLEAN,
+    "Repository Description" VARCHAR(4096),
+    "Repository Fork?" VARCHAR(16),
     "Repository Created Timestamp" TIMESTAMP,
     "Repository Updated Timestamp" TIMESTAMP,
     "Repository Last pushed Timestamp" TIMESTAMP,
-    "Repository Homepage URL" VARCHAR(256),
+    "Repository Homepage URL" VARCHAR(1024),
     "Repository Size" INT4,
     "Repository Stars Count" INT4,
     "Repository Language" VARCHAR(256),
-    "Repository Issues enabled?" BOOLEAN,
-    "Repository Wiki enabled?" BOOLEAN,
-    "Repository Pages enabled?" BOOLEAN,
+    "Repository Issues enabled?" VARCHAR(16),
+    "Repository Wiki enabled?" VARCHAR(16),
+    "Repository Pages enabled?" VARCHAR(16),
     "Repository Forks Count" INT4,
-    "Repository Mirror URL" VARCHAR(256),
+    "Repository Mirror URL" VARCHAR(1024),
     "Repository Open Issues Count" INT4,
     "Repository Default branch" VARCHAR(256),
     "Repository Watchers Count" INT4,
@@ -130,29 +121,18 @@ CREATE TABLE public.staging_projects (
     "Repository SourceRank" INT4,
     "Repository Display Name" VARCHAR(256),
     "Repository SCM type" VARCHAR(256),
-    "Repository Pull requests enabled?" BOOLEAN,
-    "Repository Logo URL" VARCHAR(256),
-    "Repository Keywords" VARCHAR(256)
+    "Repository Pull requests enabled?" VARCHAR(16),
+    "Repository Logo URL" VARCHAR(1024),
+    "Repository Keywords" VARCHAR(8192)
 );
 
-CREATE TABLE public.staging_stars (
-    repo VARCHAR(256),
-    starred_at TIMESTAMP NOT NULL,
-    login VARCHAR(256),
+CREATE TABLE IF NOT EXISTS public.staging_versions (
     id INT4,
-    node_id VARCHAR(256),
-    html_url VARCHAR(256),
-    "type" VARCHAR(256),
-    site_admin VARCHAR(256)
-);
-
-CREATE TABLE public.staging_versions (
-    ID INT4,
-    Platform VARCHAR(256),
-    "Project Name" VARCHAR(256),
-    "Project ID" INT4,
-    Number VARCHAR(256),
-    "Published Timestamp" TIMESTAMP NOT NULL,
-    "Created Timestamp" TIMESTAMP,
-    "Updated Timestamp" TIMESTAMP
+    platform VARCHAR(256),
+    project_name VARCHAR(256),
+    project_id INT4,
+    "number" VARCHAR(256),
+    published_timestamp TIMESTAMP NOT NULL,
+    created_timestamp TIMESTAMP NOT NULL,
+    updated_timestamp TIMESTAMP NOT NULL
 );
