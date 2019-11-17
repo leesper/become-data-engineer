@@ -22,9 +22,10 @@ class LoadFactOperator(BaseOperator):
 
         # get records using sql_queries.repository_table_insert
         pg_hook = PostgresHook(self.redshift_conn_id)
-        records = pg_hook.get_records(SqlQueries.repository_table_select)
-        self.log.info('get {} records from {}'.format(len(records), self.table))
+        # records = pg_hook.get_records(SqlQueries.repository_table_select)
+        # self.log.info('get {} records from {}'.format(len(records), self.table))
 
-        # insert records into repositories
-        pg_hook.insert_rows(self.table, records)
+        # # insert records into repositories
+        # pg_hook.insert_rows(self.table, records)
+        pg_hook.run(SqlQueries.repository_table_select)
         self.log.info('inserted into {}'.format(self.table))

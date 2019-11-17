@@ -1,0 +1,16 @@
+[2019-11-17 12:24:36,215] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: capstone_dag.Load_repositories_fact_table 2018-11-03T17:00:00+00:00 [queued]>
+[2019-11-17 12:24:36,219] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: capstone_dag.Load_repositories_fact_table 2018-11-03T17:00:00+00:00 [queued]>
+[2019-11-17 12:24:36,219] {taskinstance.py:838} INFO - 
+--------------------------------------------------------------------------------
+[2019-11-17 12:24:36,219] {taskinstance.py:839} INFO - Starting attempt 2 of 4
+[2019-11-17 12:24:36,219] {taskinstance.py:840} INFO - 
+--------------------------------------------------------------------------------
+[2019-11-17 12:24:36,224] {taskinstance.py:859} INFO - Executing <Task(LoadFactOperator): Load_repositories_fact_table> on 2018-11-03T17:00:00+00:00
+[2019-11-17 12:24:36,224] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'capstone_dag', 'Load_repositories_fact_table', '2018-11-03T17:00:00+00:00', '--job_id', '221', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/capstone_dag.py', '--cfg_path', '/var/folders/8q/nyxhvd6d55nfqjdbrybk6jpw0000gn/T/tmp6nqzpcfc']
+[2019-11-17 12:24:36,979] {base_task_runner.py:115} INFO - Job 221: Subtask Load_repositories_fact_table /Users/likejun/anaconda3/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2019-11-17 12:24:36,979] {base_task_runner.py:115} INFO - Job 221: Subtask Load_repositories_fact_table   """)
+[2019-11-17 12:24:37,071] {base_task_runner.py:115} INFO - Job 221: Subtask Load_repositories_fact_table [2019-11-17 12:24:37,071] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-11-17 12:24:37,420] {base_task_runner.py:115} INFO - Job 221: Subtask Load_repositories_fact_table [2019-11-17 12:24:37,420] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-17 12:24:37,440] {base_task_runner.py:115} INFO - Job 221: Subtask Load_repositories_fact_table [2019-11-17 12:24:37,440] {cli.py:516} INFO - Running <TaskInstance: capstone_dag.Load_repositories_fact_table 2018-11-03T17:00:00+00:00 [running]> on host likejundeMacBook-Pro.local
+[2019-11-17 12:24:37,448] {load_facts.py:21} INFO - LoadFactOperator for repositories
+[2019-11-17 12:24:37,454] {logging_mixin.py:95} INFO - [[34m2019-11-17 12:24:37,454[0m] {[34mbase_hook.py:[0m84} INFO[0m - Using connection to: [1mid: redshift. Host: redshift-cluster.chjcdyihped1.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: XXXXXXXX, extra: {}[0m[0m

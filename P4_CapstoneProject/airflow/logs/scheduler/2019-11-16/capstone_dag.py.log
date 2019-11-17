@@ -1,0 +1,464 @@
+[2019-11-16 09:45:48,544] {scheduler_job.py:146} INFO - Started process (PID=12611) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:45:48,552] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:45:48,553] {logging_mixin.py:95} INFO - [2019-11-16 09:45:48,553] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:45:48,560] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:45:48,584] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.040 seconds
+[2019-11-16 09:46:30,687] {scheduler_job.py:146} INFO - Started process (PID=12638) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:46:30,696] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:46:30,696] {logging_mixin.py:95} INFO - [2019-11-16 09:46:30,696] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:46:30,704] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:46:30,726] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.039 seconds
+[2019-11-16 09:47:12,819] {scheduler_job.py:146} INFO - Started process (PID=12664) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:47:12,826] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:47:12,827] {logging_mixin.py:95} INFO - [2019-11-16 09:47:12,827] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:47:12,834] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:47:12,856] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.037 seconds
+[2019-11-16 09:47:54,943] {scheduler_job.py:146} INFO - Started process (PID=12690) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:47:54,950] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:47:54,951] {logging_mixin.py:95} INFO - [2019-11-16 09:47:54,951] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:47:54,958] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:47:54,980] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.037 seconds
+[2019-11-16 09:48:37,069] {scheduler_job.py:146} INFO - Started process (PID=12718) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:48:37,076] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:48:37,077] {logging_mixin.py:95} INFO - [2019-11-16 09:48:37,077] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:48:37,084] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:48:37,108] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.038 seconds
+[2019-11-16 09:49:19,185] {scheduler_job.py:146} INFO - Started process (PID=12747) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:49:19,192] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:49:19,193] {logging_mixin.py:95} INFO - [2019-11-16 09:49:19,193] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:49:19,200] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:49:19,225] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.039 seconds
+[2019-11-16 09:50:01,311] {scheduler_job.py:146} INFO - Started process (PID=12773) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:50:01,318] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:50:01,318] {logging_mixin.py:95} INFO - [2019-11-16 09:50:01,318] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:50:01,325] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:50:01,348] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.037 seconds
+[2019-11-16 09:50:43,432] {scheduler_job.py:146} INFO - Started process (PID=12800) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:50:43,439] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:50:43,440] {logging_mixin.py:95} INFO - [2019-11-16 09:50:43,440] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:50:43,451] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:50:43,472] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.040 seconds
+[2019-11-16 09:51:25,539] {scheduler_job.py:146} INFO - Started process (PID=12827) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:51:25,546] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:51:25,547] {logging_mixin.py:95} INFO - [2019-11-16 09:51:25,546] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:51:25,557] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:51:25,577] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.038 seconds
+[2019-11-16 09:52:07,663] {scheduler_job.py:146} INFO - Started process (PID=12853) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:52:07,671] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:52:07,671] {logging_mixin.py:95} INFO - [2019-11-16 09:52:07,671] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:52:07,682] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:52:07,702] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.039 seconds
+[2019-11-16 09:52:49,783] {scheduler_job.py:146} INFO - Started process (PID=12880) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:52:49,792] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:52:49,793] {logging_mixin.py:95} INFO - [2019-11-16 09:52:49,792] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:52:49,803] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:52:49,822] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 09:52:49,827] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 15:00:00+00:00: scheduled__2018-11-03T15:00:00+00:00, externally triggered: False>
+[2019-11-16 09:52:49,830] {logging_mixin.py:95} INFO - [2019-11-16 09:52:49,830] {dagrun.py:373} WARNING - Failed to get task '<TaskInstance: capstone_dag.Stage_stars 2018-11-03 15:00:00+00:00 [success]>' for dag '<DAG: capstone_dag>'. Marking it as removed.
+[2019-11-16 09:52:49,830] {logging_mixin.py:95} INFO - [2019-11-16 09:52:49,830] {dagrun.py:373} WARNING - Failed to get task '<TaskInstance: capstone_dag.Load_stars_dim_table 2018-11-03 15:00:00+00:00 [None]>' for dag '<DAG: capstone_dag>'. Marking it as removed.
+[2019-11-16 09:52:49,838] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 09:52:49,839] {scheduler_job.py:739} INFO - Number of active dag runs reached max_active_run.
+[2019-11-16 09:52:49,854] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 09:52:49,856] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: capstone_dag.Stage_projects 2018-11-03 15:00:00+00:00 [scheduled]> in ORM
+[2019-11-16 09:52:49,863] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.080 seconds
+[2019-11-16 09:54:52,448] {scheduler_job.py:146} INFO - Started process (PID=12924) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:54:52,454] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:54:52,455] {logging_mixin.py:95} INFO - [2019-11-16 09:54:52,455] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:54:52,464] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:54:52,482] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 09:54:52,486] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 15:00:00+00:00: scheduled__2018-11-03T15:00:00+00:00, externally triggered: False>
+[2019-11-16 09:54:52,495] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 09:54:52,495] {scheduler_job.py:739} INFO - Number of active dag runs reached max_active_run.
+[2019-11-16 09:54:52,511] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 09:54:52,515] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.068 seconds
+[2019-11-16 09:55:34,572] {scheduler_job.py:146} INFO - Started process (PID=12950) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:55:34,580] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:55:34,581] {logging_mixin.py:95} INFO - [2019-11-16 09:55:34,581] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:55:34,593] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:55:34,619] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 09:55:34,625] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 15:00:00+00:00: scheduled__2018-11-03T15:00:00+00:00, externally triggered: False>
+[2019-11-16 09:55:34,639] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 09:55:34,639] {scheduler_job.py:739} INFO - Number of active dag runs reached max_active_run.
+[2019-11-16 09:55:34,663] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 09:55:34,668] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.096 seconds
+[2019-11-16 09:56:16,687] {scheduler_job.py:146} INFO - Started process (PID=12980) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:56:16,698] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:56:16,698] {logging_mixin.py:95} INFO - [2019-11-16 09:56:16,698] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:56:16,705] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:56:16,726] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.039 seconds
+[2019-11-16 09:56:58,796] {scheduler_job.py:146} INFO - Started process (PID=13007) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:56:58,808] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:56:58,808] {logging_mixin.py:95} INFO - [2019-11-16 09:56:58,808] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:56:58,816] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:56:58,836] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.040 seconds
+[2019-11-16 09:57:40,945] {scheduler_job.py:146} INFO - Started process (PID=13033) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:57:40,956] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:57:40,957] {logging_mixin.py:95} INFO - [2019-11-16 09:57:40,957] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:57:40,964] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:57:40,985] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.040 seconds
+[2019-11-16 09:58:23,079] {scheduler_job.py:146} INFO - Started process (PID=13059) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:58:23,090] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:58:23,091] {logging_mixin.py:95} INFO - [2019-11-16 09:58:23,090] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:58:23,097] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:58:23,118] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.039 seconds
+[2019-11-16 09:59:05,190] {scheduler_job.py:146} INFO - Started process (PID=13086) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:59:05,203] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:59:05,203] {logging_mixin.py:95} INFO - [2019-11-16 09:59:05,203] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:59:05,211] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:59:05,231] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.041 seconds
+[2019-11-16 09:59:47,321] {scheduler_job.py:146} INFO - Started process (PID=13113) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:59:47,333] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 09:59:47,334] {logging_mixin.py:95} INFO - [2019-11-16 09:59:47,334] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:59:47,341] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 09:59:47,364] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.042 seconds
+[2019-11-16 10:00:29,450] {scheduler_job.py:146} INFO - Started process (PID=13139) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:00:29,461] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:00:29,462] {logging_mixin.py:95} INFO - [2019-11-16 10:00:29,462] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:00:29,469] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:00:29,490] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.040 seconds
+[2019-11-16 10:01:11,566] {scheduler_job.py:146} INFO - Started process (PID=13166) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:01:11,575] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:01:11,576] {logging_mixin.py:95} INFO - [2019-11-16 10:01:11,575] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:01:11,583] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:01:11,605] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.039 seconds
+[2019-11-16 10:01:53,667] {scheduler_job.py:146} INFO - Started process (PID=13192) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:01:53,674] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:01:53,674] {logging_mixin.py:95} INFO - [2019-11-16 10:01:53,674] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:01:53,681] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:01:53,702] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.035 seconds
+[2019-11-16 10:02:35,817] {scheduler_job.py:146} INFO - Started process (PID=13218) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:02:35,824] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:02:35,824] {logging_mixin.py:95} INFO - [2019-11-16 10:02:35,824] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:02:35,831] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:02:35,853] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.036 seconds
+[2019-11-16 10:03:17,962] {scheduler_job.py:146} INFO - Started process (PID=13246) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:03:17,970] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:03:17,971] {logging_mixin.py:95} INFO - [2019-11-16 10:03:17,971] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:03:17,979] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:03:18,003] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.041 seconds
+[2019-11-16 10:04:00,094] {scheduler_job.py:146} INFO - Started process (PID=13272) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:04:00,102] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:04:00,103] {logging_mixin.py:95} INFO - [2019-11-16 10:04:00,103] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:04:00,110] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:04:00,132] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.038 seconds
+[2019-11-16 10:04:42,213] {scheduler_job.py:146} INFO - Started process (PID=13298) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:04:42,220] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:04:42,220] {logging_mixin.py:95} INFO - [2019-11-16 10:04:42,220] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:04:42,227] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:04:42,248] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 10:04:42,253] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 15:00:00+00:00: scheduled__2018-11-03T15:00:00+00:00, externally triggered: False>
+[2019-11-16 10:04:42,263] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 10:04:42,263] {scheduler_job.py:739} INFO - Number of active dag runs reached max_active_run.
+[2019-11-16 10:04:42,278] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 10:04:42,281] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: capstone_dag.Stage_projects 2018-11-03 15:00:00+00:00 [scheduled]> in ORM
+[2019-11-16 10:04:42,287] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.075 seconds
+[2019-11-16 10:06:44,936] {scheduler_job.py:146} INFO - Started process (PID=13334) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:06:44,944] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:06:44,944] {logging_mixin.py:95} INFO - [2019-11-16 10:06:44,944] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:06:44,952] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:06:44,974] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 10:06:44,979] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 15:00:00+00:00: scheduled__2018-11-03T15:00:00+00:00, externally triggered: False>
+[2019-11-16 10:06:44,990] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 10:06:44,990] {scheduler_job.py:739} INFO - Number of active dag runs reached max_active_run.
+[2019-11-16 10:06:45,008] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 10:06:45,012] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.076 seconds
+[2019-11-16 10:07:27,080] {scheduler_job.py:146} INFO - Started process (PID=13361) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:07:27,087] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:07:27,088] {logging_mixin.py:95} INFO - [2019-11-16 10:07:27,087] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:07:27,095] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:07:27,117] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 10:07:27,122] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 15:00:00+00:00: scheduled__2018-11-03T15:00:00+00:00, externally triggered: False>
+[2019-11-16 10:07:27,132] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 10:07:27,133] {scheduler_job.py:739} INFO - Number of active dag runs reached max_active_run.
+[2019-11-16 10:07:27,149] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 10:07:27,153] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.073 seconds
+[2019-11-16 10:08:09,206] {scheduler_job.py:146} INFO - Started process (PID=13389) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:08:09,214] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:08:09,214] {logging_mixin.py:95} INFO - [2019-11-16 10:08:09,214] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:08:09,222] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:08:09,245] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 10:08:09,251] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 15:00:00+00:00: scheduled__2018-11-03T15:00:00+00:00, externally triggered: False>
+[2019-11-16 10:08:09,261] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 10:08:09,261] {scheduler_job.py:739} INFO - Number of active dag runs reached max_active_run.
+[2019-11-16 10:08:09,277] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 10:08:09,281] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.075 seconds
+[2019-11-16 10:08:51,341] {scheduler_job.py:146} INFO - Started process (PID=13417) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:08:51,348] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:08:51,349] {logging_mixin.py:95} INFO - [2019-11-16 10:08:51,348] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:08:51,356] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:08:51,377] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 10:08:51,381] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 15:00:00+00:00: scheduled__2018-11-03T15:00:00+00:00, externally triggered: False>
+[2019-11-16 10:08:51,391] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 10:08:51,391] {scheduler_job.py:739} INFO - Number of active dag runs reached max_active_run.
+[2019-11-16 10:08:51,408] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 10:08:51,412] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.071 seconds
+[2019-11-16 10:09:33,465] {scheduler_job.py:146} INFO - Started process (PID=13445) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:09:33,471] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:09:33,472] {logging_mixin.py:95} INFO - [2019-11-16 10:09:33,472] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:09:33,480] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:09:33,500] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 10:09:33,506] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 15:00:00+00:00: scheduled__2018-11-03T15:00:00+00:00, externally triggered: False>
+[2019-11-16 10:09:33,518] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 10:09:33,518] {scheduler_job.py:739} INFO - Number of active dag runs reached max_active_run.
+[2019-11-16 10:09:33,535] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 10:09:33,538] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: capstone_dag.Stage_projects 2018-11-03 15:00:00+00:00 [scheduled]> in ORM
+[2019-11-16 10:09:33,545] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.080 seconds
+[2019-11-16 10:10:25,906] {scheduler_job.py:146} INFO - Started process (PID=13475) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:10:25,914] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:10:25,915] {logging_mixin.py:95} INFO - [2019-11-16 10:10:25,914] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:10:25,922] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:10:25,944] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 10:10:25,950] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 15:00:00+00:00: scheduled__2018-11-03T15:00:00+00:00, externally triggered: False>
+[2019-11-16 10:10:25,966] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 10:10:25,966] {scheduler_job.py:739} INFO - Number of active dag runs reached max_active_run.
+[2019-11-16 10:10:26,000] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 10:10:26,008] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.102 seconds
+[2019-11-16 10:11:08,057] {scheduler_job.py:146} INFO - Started process (PID=13502) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:11:08,066] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:11:08,066] {logging_mixin.py:95} INFO - [2019-11-16 10:11:08,066] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:11:08,075] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:11:08,098] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 10:11:08,104] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 15:00:00+00:00: scheduled__2018-11-03T15:00:00+00:00, externally triggered: False>
+[2019-11-16 10:11:08,113] {logging_mixin.py:95} INFO - [2019-11-16 10:11:08,113] {dagrun.py:308} INFO - Marking run <DagRun capstone_dag @ 2018-11-03 15:00:00+00:00: scheduled__2018-11-03T15:00:00+00:00, externally triggered: False> failed
+[2019-11-16 10:11:08,115] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 10:11:08,148] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 10:11:08,150] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: capstone_dag.Begin_execution 2019-11-16 01:52:26.697382+00:00 [scheduled]> in ORM
+[2019-11-16 10:11:08,159] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.102 seconds
+[2019-11-16 10:11:55,629] {scheduler_job.py:146} INFO - Started process (PID=13532) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:11:55,635] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:11:55,636] {logging_mixin.py:95} INFO - [2019-11-16 10:11:55,636] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:11:55,644] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:11:55,665] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.036 seconds
+[2019-11-16 10:12:37,738] {scheduler_job.py:146} INFO - Started process (PID=13559) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:12:37,745] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:12:37,746] {logging_mixin.py:95} INFO - [2019-11-16 10:12:37,745] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:12:37,754] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:12:37,774] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.036 seconds
+[2019-11-16 10:13:19,876] {scheduler_job.py:146} INFO - Started process (PID=13586) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:13:19,883] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:13:19,883] {logging_mixin.py:95} INFO - [2019-11-16 10:13:19,883] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:13:19,891] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:13:19,911] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.036 seconds
+[2019-11-16 10:14:02,016] {scheduler_job.py:146} INFO - Started process (PID=13612) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:14:02,022] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:14:02,023] {logging_mixin.py:95} INFO - [2019-11-16 10:14:02,023] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:14:02,031] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:14:02,051] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.035 seconds
+[2019-11-16 10:14:44,163] {scheduler_job.py:146} INFO - Started process (PID=13638) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:14:44,170] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:14:44,170] {logging_mixin.py:95} INFO - [2019-11-16 10:14:44,170] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:14:44,177] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:14:44,193] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 10:14:44,212] {scheduler_job.py:1265} INFO - Created <DagRun capstone_dag @ 2018-11-03T16:00:00+00:00: scheduled__2018-11-03T16:00:00+00:00, externally triggered: False>
+[2019-11-16 10:14:44,215] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 16:00:00+00:00: scheduled__2018-11-03T16:00:00+00:00, externally triggered: False>
+[2019-11-16 10:14:44,221] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 10:14:44,221] {scheduler_job.py:739} INFO - Number of active dag runs reached max_active_run.
+[2019-11-16 10:14:44,244] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 10:14:44,247] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: capstone_dag.Begin_execution 2018-11-03 16:00:00+00:00 [scheduled]> in ORM
+[2019-11-16 10:14:44,255] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.091 seconds
+[2019-11-16 10:15:31,570] {scheduler_job.py:146} INFO - Started process (PID=13668) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:15:31,577] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:15:31,578] {logging_mixin.py:95} INFO - [2019-11-16 10:15:31,578] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:15:31,586] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:15:31,607] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 10:15:31,614] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 16:00:00+00:00: scheduled__2018-11-03T16:00:00+00:00, externally triggered: False>
+[2019-11-16 10:15:31,630] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 10:15:31,630] {scheduler_job.py:739} INFO - Number of active dag runs reached max_active_run.
+[2019-11-16 10:15:31,651] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 10:15:31,653] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: capstone_dag.Stage_versions 2018-11-03 16:00:00+00:00 [scheduled]> in ORM
+[2019-11-16 10:15:31,655] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: capstone_dag.Stage_dependencies 2018-11-03 16:00:00+00:00 [scheduled]> in ORM
+[2019-11-16 10:15:31,657] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: capstone_dag.Stage_projects 2018-11-03 16:00:00+00:00 [scheduled]> in ORM
+[2019-11-16 10:15:31,664] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.094 seconds
+[2019-11-16 10:33:32,899] {scheduler_job.py:146} INFO - Started process (PID=13858) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:33:32,906] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:33:32,907] {logging_mixin.py:95} INFO - [2019-11-16 10:33:32,907] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:33:32,915] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:33:32,936] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 10:33:32,941] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 16:00:00+00:00: scheduled__2018-11-03T16:00:00+00:00, externally triggered: False>
+[2019-11-16 10:33:32,951] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 10:33:32,951] {scheduler_job.py:739} INFO - Number of active dag runs reached max_active_run.
+[2019-11-16 10:33:32,964] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 10:33:32,967] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: capstone_dag.Load_repositories_fact_table 2018-11-03 16:00:00+00:00 [scheduled]> in ORM
+[2019-11-16 10:33:32,973] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.074 seconds
+[2019-11-16 10:34:25,506] {scheduler_job.py:146} INFO - Started process (PID=13888) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:34:25,513] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:34:25,514] {logging_mixin.py:95} INFO - [2019-11-16 10:34:25,513] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:34:25,522] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:34:25,542] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 10:34:25,547] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 16:00:00+00:00: scheduled__2018-11-03T16:00:00+00:00, externally triggered: False>
+[2019-11-16 10:34:25,557] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 10:34:25,557] {scheduler_job.py:739} INFO - Number of active dag runs reached max_active_run.
+[2019-11-16 10:34:25,570] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 10:34:25,574] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.068 seconds
+[2019-11-16 10:35:07,634] {scheduler_job.py:146} INFO - Started process (PID=13914) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:35:07,641] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:35:07,641] {logging_mixin.py:95} INFO - [2019-11-16 10:35:07,641] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:35:07,650] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:35:07,670] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 10:35:07,674] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 16:00:00+00:00: scheduled__2018-11-03T16:00:00+00:00, externally triggered: False>
+[2019-11-16 10:35:07,684] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 10:35:07,684] {scheduler_job.py:739} INFO - Number of active dag runs reached max_active_run.
+[2019-11-16 10:35:07,697] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 10:35:07,701] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.068 seconds
+[2019-11-16 10:35:49,759] {scheduler_job.py:146} INFO - Started process (PID=13942) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:35:49,766] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:35:49,767] {logging_mixin.py:95} INFO - [2019-11-16 10:35:49,767] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:35:49,775] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:35:49,799] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.040 seconds
+[2019-11-16 10:36:31,868] {scheduler_job.py:146} INFO - Started process (PID=13971) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:36:31,875] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:36:31,875] {logging_mixin.py:95} INFO - [2019-11-16 10:36:31,875] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:36:31,883] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:36:31,903] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.035 seconds
+[2019-11-16 10:37:14,010] {scheduler_job.py:146} INFO - Started process (PID=13997) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:37:14,017] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:37:14,018] {logging_mixin.py:95} INFO - [2019-11-16 10:37:14,018] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:37:14,026] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:37:14,051] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.041 seconds
+[2019-11-16 10:37:56,165] {scheduler_job.py:146} INFO - Started process (PID=14025) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:37:56,173] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:37:56,173] {logging_mixin.py:95} INFO - [2019-11-16 10:37:56,173] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:37:56,179] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:37:56,200] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.035 seconds
+[2019-11-16 10:38:38,278] {scheduler_job.py:146} INFO - Started process (PID=14055) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:38:38,286] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:38:38,287] {logging_mixin.py:95} INFO - [2019-11-16 10:38:38,287] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:38:38,294] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:38:38,315] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.037 seconds
+[2019-11-16 10:39:20,394] {scheduler_job.py:146} INFO - Started process (PID=14082) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:39:20,403] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:39:20,404] {logging_mixin.py:95} INFO - [2019-11-16 10:39:20,404] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:39:20,410] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:39:20,432] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.038 seconds
+[2019-11-16 10:40:02,510] {scheduler_job.py:146} INFO - Started process (PID=14111) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:40:02,517] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:40:02,517] {logging_mixin.py:95} INFO - [2019-11-16 10:40:02,517] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:40:02,522] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:40:02,542] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.032 seconds
+[2019-11-16 10:40:44,653] {scheduler_job.py:146} INFO - Started process (PID=14141) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:40:44,672] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:40:44,673] {logging_mixin.py:95} INFO - [2019-11-16 10:40:44,673] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:40:44,683] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:40:44,715] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.061 seconds
+[2019-11-16 10:41:26,776] {scheduler_job.py:146} INFO - Started process (PID=14167) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:41:26,786] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:41:26,787] {logging_mixin.py:95} INFO - [2019-11-16 10:41:26,787] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:41:26,793] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:41:26,815] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.039 seconds
+[2019-11-16 10:42:08,895] {scheduler_job.py:146} INFO - Started process (PID=14195) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:42:08,905] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:42:08,905] {logging_mixin.py:95} INFO - [2019-11-16 10:42:08,905] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:42:08,912] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:42:08,936] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.041 seconds
+[2019-11-16 10:42:51,008] {scheduler_job.py:146} INFO - Started process (PID=14221) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:42:51,017] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:42:51,017] {logging_mixin.py:95} INFO - [2019-11-16 10:42:51,017] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:42:51,024] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:42:51,045] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.037 seconds
+[2019-11-16 10:43:33,134] {scheduler_job.py:146} INFO - Started process (PID=14247) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:43:33,140] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:43:33,141] {logging_mixin.py:95} INFO - [2019-11-16 10:43:33,141] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:43:33,148] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:43:33,167] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.034 seconds
+[2019-11-16 10:44:15,290] {scheduler_job.py:146} INFO - Started process (PID=14274) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:44:15,297] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:44:15,298] {logging_mixin.py:95} INFO - [2019-11-16 10:44:15,298] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:44:15,305] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:44:15,326] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.036 seconds
+[2019-11-16 10:44:57,423] {scheduler_job.py:146} INFO - Started process (PID=14300) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:44:57,430] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 10:44:57,431] {logging_mixin.py:95} INFO - [2019-11-16 10:44:57,431] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:44:57,438] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 10:44:57,459] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 10:44:57,464] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 16:00:00+00:00: scheduled__2018-11-03T16:00:00+00:00, externally triggered: False>
+[2019-11-16 10:44:57,473] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 10:44:57,473] {scheduler_job.py:739} INFO - Number of active dag runs reached max_active_run.
+[2019-11-16 10:44:57,487] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 10:44:57,489] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: capstone_dag.Load_repositories_fact_table 2018-11-03 16:00:00+00:00 [scheduled]> in ORM
+[2019-11-16 10:44:57,495] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.072 seconds
+[2019-11-16 11:29:25,160] {scheduler_job.py:146} INFO - Started process (PID=14712) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:29:25,168] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 11:29:25,169] {logging_mixin.py:95} INFO - [2019-11-16 11:29:25,169] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:29:25,177] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:29:25,198] {logging_mixin.py:95} INFO - [2019-11-16 11:29:25,197] {dagbag.py:309} INFO - Detected zombie job with dag_id capstone_dag, task_id Load_repositories_fact_table, and execution date 2018-11-03T16:00:00+00:00
+[2019-11-16 11:29:25,204] {logging_mixin.py:95} INFO - [2019-11-16 11:29:25,204] {taskinstance.py:1051} ERROR - <TaskInstance: capstone_dag.Load_repositories_fact_table 2018-11-03 16:00:00+00:00 [running]> detected as zombie
+NoneType: None
+[2019-11-16 11:29:25,205] {logging_mixin.py:95} INFO - [2019-11-16 11:29:25,205] {taskinstance.py:1074} INFO - Marking task as UP_FOR_RETRY
+[2019-11-16 11:29:25,211] {logging_mixin.py:95} INFO - [2019-11-16 11:29:25,211] {dagbag.py:314} INFO - Marked zombie job <TaskInstance: capstone_dag.Load_repositories_fact_table 2018-11-03 16:00:00+00:00 [up_for_retry]> as up_for_retry
+[2019-11-16 11:29:25,211] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.051 seconds
+[2019-11-16 11:30:07,285] {scheduler_job.py:146} INFO - Started process (PID=14739) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:30:07,292] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 11:30:07,292] {logging_mixin.py:95} INFO - [2019-11-16 11:30:07,292] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:30:07,299] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:30:07,316] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.031 seconds
+[2019-11-16 11:30:49,437] {scheduler_job.py:146} INFO - Started process (PID=14766) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:30:49,444] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 11:30:49,445] {logging_mixin.py:95} INFO - [2019-11-16 11:30:49,444] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:30:49,453] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:30:49,473] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.036 seconds
+[2019-11-16 11:31:31,688] {scheduler_job.py:146} INFO - Started process (PID=14794) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:31:31,694] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 11:31:31,695] {logging_mixin.py:95} INFO - [2019-11-16 11:31:31,695] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:31:31,703] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:31:31,723] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.035 seconds
+[2019-11-16 11:32:13,958] {scheduler_job.py:146} INFO - Started process (PID=14824) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:32:13,965] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 11:32:13,965] {logging_mixin.py:95} INFO - [2019-11-16 11:32:13,965] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:32:13,974] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:32:13,998] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.041 seconds
+[2019-11-16 11:32:56,197] {scheduler_job.py:146} INFO - Started process (PID=14851) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:32:56,204] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 11:32:56,204] {logging_mixin.py:95} INFO - [2019-11-16 11:32:56,204] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:32:56,212] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:32:56,232] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.035 seconds
+[2019-11-16 11:33:38,436] {scheduler_job.py:146} INFO - Started process (PID=14877) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:33:38,441] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 11:33:38,442] {logging_mixin.py:95} INFO - [2019-11-16 11:33:38,442] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:33:38,449] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:33:38,465] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.029 seconds
+[2019-11-16 11:34:20,695] {scheduler_job.py:146} INFO - Started process (PID=14904) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:34:20,702] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 11:34:20,703] {logging_mixin.py:95} INFO - [2019-11-16 11:34:20,702] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:34:20,711] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:34:20,733] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.038 seconds
+[2019-11-16 11:35:02,965] {scheduler_job.py:146} INFO - Started process (PID=14930) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:35:02,971] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 11:35:02,972] {logging_mixin.py:95} INFO - [2019-11-16 11:35:02,972] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:35:02,980] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:35:03,004] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.039 seconds
+[2019-11-16 11:35:45,248] {scheduler_job.py:146} INFO - Started process (PID=14957) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:35:45,255] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 11:35:45,256] {logging_mixin.py:95} INFO - [2019-11-16 11:35:45,256] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:35:45,264] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:35:45,288] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.040 seconds
+[2019-11-16 11:36:27,507] {scheduler_job.py:146} INFO - Started process (PID=14989) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:36:27,513] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 11:36:27,513] {logging_mixin.py:95} INFO - [2019-11-16 11:36:27,513] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:36:27,520] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:36:27,537] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.031 seconds
+[2019-11-16 11:59:36,186] {scheduler_job.py:146} INFO - Started process (PID=15034) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:59:36,193] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 11:59:36,193] {logging_mixin.py:95} INFO - [2019-11-16 11:59:36,193] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:59:36,201] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 11:59:36,221] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.034 seconds
+[2019-11-16 12:00:18,233] {scheduler_job.py:146} INFO - Started process (PID=15074) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 12:00:18,240] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-16 12:00:18,241] {logging_mixin.py:95} INFO - [2019-11-16 12:00:18,241] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 12:00:18,249] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-16 12:00:18,270] {scheduler_job.py:1255} INFO - Processing capstone_dag
+[2019-11-16 12:00:18,275] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2018-11-03 16:00:00+00:00: scheduled__2018-11-03T16:00:00+00:00, externally triggered: False>
+[2019-11-16 12:00:18,285] {scheduler_job.py:729} INFO - Examining DAG run <DagRun capstone_dag @ 2019-11-16 01:52:26.697382+00:00: manual__2019-11-16T01:52:26.697382+00:00, externally triggered: True>
+[2019-11-16 12:00:18,286] {scheduler_job.py:739} INFO - Number of active dag runs reached max_active_run.
+[2019-11-16 12:00:18,300] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: capstone_dag> because no tasks in DAG have SLAs
+[2019-11-16 12:00:18,303] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: capstone_dag.Load_repositories_fact_table 2018-11-03 16:00:00+00:00 [scheduled]> in ORM
+[2019-11-16 12:00:18,309] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.076 seconds
+[2019-11-17 01:15:54,359] {scheduler_job.py:146} INFO - Started process (PID=15862) to work on /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-17 01:15:54,367] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/capstone_dag.py for tasks to queue
+[2019-11-17 01:15:54,368] {logging_mixin.py:95} INFO - [2019-11-17 01:15:54,368] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-17 01:15:54,390] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['capstone_dag']) retrieved from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-17 01:15:54,410] {logging_mixin.py:95} INFO - [2019-11-17 01:15:54,410] {dagbag.py:309} INFO - Detected zombie job with dag_id capstone_dag, task_id Load_repositories_fact_table, and execution date 2018-11-03T16:00:00+00:00
+[2019-11-17 01:15:54,422] {logging_mixin.py:95} INFO - [2019-11-17 01:15:54,422] {taskinstance.py:1051} ERROR - <TaskInstance: capstone_dag.Load_repositories_fact_table 2018-11-03 16:00:00+00:00 [running]> detected as zombie
+NoneType: None
+[2019-11-17 01:15:54,423] {logging_mixin.py:95} INFO - [2019-11-17 01:15:54,423] {taskinstance.py:1074} INFO - Marking task as UP_FOR_RETRY
+[2019-11-17 01:15:54,432] {logging_mixin.py:95} INFO - [2019-11-17 01:15:54,432] {dagbag.py:314} INFO - Marked zombie job <TaskInstance: capstone_dag.Load_repositories_fact_table 2018-11-03 16:00:00+00:00 [up_for_retry]> as up_for_retry
+[2019-11-17 01:15:54,433] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/capstone_dag.py took 0.074 seconds

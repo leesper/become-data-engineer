@@ -24,17 +24,18 @@ class LoadDimensionOperator(BaseOperator):
 
         # load records using sql_queries
         lookup = {
-            'versions': SqlQueries.version_table_select,
-            'projects': SqlQueries.project_table_select,
-            'dependencies': SqlQueries.dependency_table_select,
-            'time': SqlQueries.time_table_select,
+            'version_dim': SqlQueries.version_table_select,
+            'project_dim': SqlQueries.project_table_select,
+            'dependency_dim ': SqlQueries.dependency_table_select,
+            'time_dim': SqlQueries.time_table_select,
         }
         pg_hook = PostgresHook('redshift')
-        records = pg_hook.get_records(lookup[self.table])
-        self.log.info('get {} records from {}'.format(len(records), self.table))
+        # records = pg_hook.get_records(lookup[self.table])
+        # self.log.info('get {} records from {}'.format(len(records), self.table))
 
         # insert them into corresponding tables
         if self.replace:
             pg_hook.run(f"DELETE FROM {self.table}")
-        pg_hook.insert_rows(self.table, records)
+        # pg_hook.insert_rows(self.table, records)
+        pg_hook.run(lookup[self.table])
         self.log.info('inserted into {}'.format(self.table))
