@@ -8,60 +8,95 @@ The end case of this project will be a data visualization dashboard showing the 
 
 # Gather Data
 
-I find the public dataset from [awesome public datasets](https://github.com/awesomedata/awesome-public-datasets) in the portion of **Software**. The datasets are of 13GB and in CSV format and come from [Libraries.io Open Source Repository and Dependency Metadata](https://zenodo.org/record/1068916). This data is collected from GitLab, Github and BitBucket. Considering that this project only interests in repositories on Github, we also take the [Github Developer API](https://developer.github.com/v3/) as a supplement.
+I find the public dataset from [awesome public datasets](https://github.com/awesomedata/awesome-public-datasets) in the portion of **Software**. The datasets are of 13GB and in CSV format and come from [Libraries.io Open Source Repository and Dependency Metadata](https://zenodo.org/record/1068916). This data is collected from GitLab, Github and BitBucket. 
 
 # Explore & Assess Data
 
-下载好的数据上传到S3
-启动EMR集群，通过notebook，采用探索性数据分析对数据进行EDA
-    对数据进行质量检查，文档记录数据清洗加工的处理过程
-    确认要从Github API补充什么数据
-通过对数据的研究确认要从Github API获取和采集哪些数据（JSON格式）
-    编写程序从Github API采集JSON格式数据
-    将JSON文件上传到S3
+I downloaded the file `Libraries.io-open-data-1.0.0.zip`, unzip it and upload open source software data onto S3 at `s3://dend-capstone-lkj`. These data includes information about projects, repositories, versions and dependencies. Before all the pipeline work, I first lauch an EMR cluster and assess and analyse data using Jupyter Notebook combining with Spark. Please refer [CapstoneEDA.ipynb](https://github.com/leesper/become-data-engineer/blob/master/P4_CapstoneProject/CapstoneEDA.ipynb) for detailed information.
 
 # Conceptual Data Model
 
-对数据进行模型设计，确定事实表和维度表，解释所选择数据模型的合理性
-    复习数据仓库相关知识点
-根据数据模型进行数据管道概念设计
+I designed a star model for the data:
+
+![](./capstone.vpd.png)
+
+We have the repositories centered as the fact table, then there are at least four dimensions: version, project, time and dependency. In the repository fact table we have the facts about the open source repository: its stars, forks, contributors, size and so on. And we can query information about project, version, time and dependency relationship on dimension tables.
 
 # ETL Data Modeling
 
-数据管道编排
-    弄清S3/Redshift/EMR之间的权限访问控制（IAM）
-    弄清Airflow如何与EMR中的Spark交互
-    从S3读入数据文件形成staging表
-    通过staging筛选出Github项目，然后构建facts & dimensions
-    在数据管道中进行数据质量检查
-        完整性检查
-        单元测试代码
-        source/count检查
+![](./pipeline.png)
 
-提供最终数据的数据字典
+I designed the pipeline model as three parts: staging part, fact-and-dimension part and checking part. At first we have to load all the data from S3 into three staging tables: `staging_projects`, `staging_versions` and `staging_dependencies`; then load data from staging table into fact and dimension tables, constructing tables: `repository_fact`, `dependency_dim`, `project_dim`, `version_dim` and `time_dim`; at last we checked and assured the tables.
 
-notes:
-1. 使用S3存储原始文件，使用Redshift做数据仓库，用EMR的Spark集群做计算，用Airflow做管道编排
-2. Redshift集群要attach一个role来访问S3，同样EMR也要attach一个role访问Redshift，Airflow要通过IAM user访问EMR和Redshift
+# Dictionary
 
-# Applications Architecture
+## Table `repository_fact`
+| field         | meaning |
+| ------------- | ------------ |
+| repository_id | unique primary key |
+| stars         | number of stars |
+| forks         | number of forks |
+| watchers      | number of watchers |
+| contributors  | number of contributors |
+| size          | size in kilobytes |
+| repo          | repository name with owner |
+| version_id    | unique id of version |
+| project_id    | unique id of project |
+| create_time   | timestamp of when repository is created |
+| dependency_id | unique if of dependency |
 
-项目应用的目标（根据上面对数据的研究确定最终产品形态）
-    为什么选择这个数据模型
-进行项目架构设计
-    架构设计
-    技术选型合理性
-    性能指标
-        SLA
-        数据量增大100x怎么办
-        100+DB访问量如何处理
-    解释数据的更新频率
-    每日七点定时运行如何实现
-    后端开发
-        web框架技术选型
-        运行哪些查询？
-    前端开发
-    云端部署
+## Table `version_dim`
+| field         | meaning |
+| ------------- | ------------ |
+| version_id    | unique primary key |
+| number        | number of release  |
+| publish_time  | timestamp when version is published |
 
-整理成博客并附上链接
+## Table `project_dim`
+| field         | meaning |
+| ------------- | ------------ |
+| project_id    | unique primary key |
+| platform      | name of the package manager |
+| name          | name of the project |
+| host          | repository host type |
+| language      | programming language |
+| license       | license information  |
+| status        | status of the project |
+
+## Table `dependency_dim`
+| field         | meaning |
+| ------------- | ------------ |
+| dependency_id | unique primary key |
+| dependency_name | name of the dependency project |
+| dependency_platform | the name of the package manager of the dependency project |
+| dependency_kind | the type of dependency |
+
+## Table `time_dim`
+
+| field         | meaning |
+| ------------- | ------------ |
+| create_time   | timestamp when the project created |
+| hour | hour when the project created |
+| day | day of month when the project created |
+| month | month when the project created |
+| year | year when the project created |
+| weekday | day of week when the project created |
+
+# Explaination
+
+The final data model is made to analyse the open source projects hosted on several hosts, such as Github, Gitlab and Bitbucket. We can do some analysis about the repositories from dimensions of version, time, dependency and projects and answer some questions such as:
+
+1. Are repostories created on weekend more than other days ?
+2. What is the top 5 programming languages that are used frequently ?
+3. Which platform hosted the most repositories ?
+
+This project uses the following tools:
+
+* Apache Airflow as the pipeline
+* AWS S3 service storing original csv and json files
+* AWS EMR service to do EDA before pipelining
+* AWS Redshift as the data warehouse
+
+If the data increased by 100x and more than 100+ people are accessing the database, then we can scale out the redshift cluster and make it more nodes to hold the pressure. 
+
 
