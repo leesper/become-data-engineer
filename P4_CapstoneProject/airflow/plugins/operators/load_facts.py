@@ -27,5 +27,6 @@ class LoadFactOperator(BaseOperator):
 
         # # insert records into repositories
         # pg_hook.insert_rows(self.table, records)
-        pg_hook.run(SqlQueries.repository_table_select)
+        stmt = SqlQueries.repository_table_select.format(context['execution_date'].to_date_string())
+        pg_hook.run(stmt)
         self.log.info('inserted into {}'.format(self.table))

@@ -1,0 +1,393 @@
+[2019-11-17 21:30:54,033] {scheduler_job.py:146} INFO - Started process (PID=8464) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:30:54,041] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 21:30:54,042] {logging_mixin.py:95} INFO - [2019-11-17 21:30:54,042] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:30:54,050] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:30:54,063] {logging_mixin.py:95} INFO - [2019-11-17 21:30:54,062] {dag.py:1323} INFO - Creating ORM DAG for udacity_dag
+[2019-11-17 21:30:54,076] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.043 seconds
+[2019-11-17 21:31:36,164] {scheduler_job.py:146} INFO - Started process (PID=8487) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:31:36,172] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 21:31:36,173] {logging_mixin.py:95} INFO - [2019-11-17 21:31:36,172] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:31:36,181] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:31:36,206] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 21:31:36,226] {scheduler_job.py:1265} INFO - Created <DagRun udacity_dag @ 2007-10-29T00:00:00+00:00: scheduled__2007-10-29T00:00:00+00:00, externally triggered: False>
+[2019-11-17 21:31:36,228] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 00:00:00+00:00: scheduled__2007-10-29T00:00:00+00:00, externally triggered: False>
+[2019-11-17 21:31:36,253] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 21:31:36,256] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Begin_execution 2007-10-29 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:31:36,265] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.102 seconds
+[2019-11-17 21:32:23,713] {scheduler_job.py:146} INFO - Started process (PID=8511) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:32:23,719] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 21:32:23,720] {logging_mixin.py:95} INFO - [2019-11-17 21:32:23,720] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:32:23,726] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:32:23,747] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 21:32:23,752] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 00:00:00+00:00: scheduled__2007-10-29T00:00:00+00:00, externally triggered: False>
+[2019-11-17 21:32:23,780] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 21:32:23,782] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_versions 2007-10-29 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:32:23,785] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_dependencies 2007-10-29 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:32:23,786] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_projects 2007-10-29 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:32:23,794] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.080 seconds
+[2019-11-17 21:38:15,270] {scheduler_job.py:146} INFO - Started process (PID=8557) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:38:15,279] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 21:38:15,279] {logging_mixin.py:95} INFO - [2019-11-17 21:38:15,279] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:38:15,291] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:38:15,311] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 21:38:15,317] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 00:00:00+00:00: scheduled__2007-10-29T00:00:00+00:00, externally triggered: False>
+[2019-11-17 21:38:15,341] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 21:38:15,343] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_repositories_fact_table 2007-10-29 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:38:15,350] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.080 seconds
+[2019-11-17 21:39:07,731] {scheduler_job.py:146} INFO - Started process (PID=8585) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:39:07,738] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 21:39:07,738] {logging_mixin.py:95} INFO - [2019-11-17 21:39:07,738] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:39:07,750] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:39:07,770] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 21:39:07,775] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 00:00:00+00:00: scheduled__2007-10-29T00:00:00+00:00, externally triggered: False>
+[2019-11-17 21:39:07,797] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 21:39:07,799] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_projects_dim_table 2007-10-29 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:39:07,801] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_versions_dim_table 2007-10-29 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:39:07,803] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_dependencies_dim_table 2007-10-29 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:39:07,805] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_time_dim_table 2007-10-29 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:39:07,812] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.081 seconds
+[2019-11-17 21:41:19,266] {scheduler_job.py:146} INFO - Started process (PID=8617) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:41:19,273] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 21:41:19,274] {logging_mixin.py:95} INFO - [2019-11-17 21:41:19,274] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:41:19,286] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:41:19,307] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 21:41:19,311] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 00:00:00+00:00: scheduled__2007-10-29T00:00:00+00:00, externally triggered: False>
+[2019-11-17 21:41:19,329] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 21:41:19,331] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Run_data_quality_checks 2007-10-29 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:41:19,338] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.072 seconds
+[2019-11-17 21:42:51,693] {scheduler_job.py:146} INFO - Started process (PID=8643) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:42:51,703] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 21:42:51,704] {logging_mixin.py:95} INFO - [2019-11-17 21:42:51,704] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:42:51,711] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:42:51,731] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 21:42:51,735] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 00:00:00+00:00: scheduled__2007-10-29T00:00:00+00:00, externally triggered: False>
+[2019-11-17 21:42:51,749] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 21:42:51,751] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stop_execution 2007-10-29 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:42:51,757] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.065 seconds
+[2019-11-17 21:43:39,254] {scheduler_job.py:146} INFO - Started process (PID=8673) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:43:39,266] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 21:43:39,267] {logging_mixin.py:95} INFO - [2019-11-17 21:43:39,267] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:43:39,274] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:43:39,297] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 21:43:39,302] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 00:00:00+00:00: scheduled__2007-10-29T00:00:00+00:00, externally triggered: False>
+[2019-11-17 21:43:39,309] {logging_mixin.py:95} INFO - [2019-11-17 21:43:39,309] {dagrun.py:316} INFO - Marking run <DagRun udacity_dag @ 2007-10-29 00:00:00+00:00: scheduled__2007-10-29T00:00:00+00:00, externally triggered: False> successful
+[2019-11-17 21:43:39,312] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 21:43:39,316] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.062 seconds
+[2019-11-17 21:44:21,349] {scheduler_job.py:146} INFO - Started process (PID=8695) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:44:21,361] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 21:44:21,362] {logging_mixin.py:95} INFO - [2019-11-17 21:44:21,361] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:44:21,369] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:44:21,391] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 21:44:21,412] {scheduler_job.py:1265} INFO - Created <DagRun udacity_dag @ 2007-10-29T01:00:00+00:00: scheduled__2007-10-29T01:00:00+00:00, externally triggered: False>
+[2019-11-17 21:44:21,414] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 01:00:00+00:00: scheduled__2007-10-29T01:00:00+00:00, externally triggered: False>
+[2019-11-17 21:44:21,439] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 21:44:21,441] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Begin_execution 2007-10-29 01:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:44:21,448] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.099 seconds
+[2019-11-17 21:45:08,836] {scheduler_job.py:146} INFO - Started process (PID=8720) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:45:08,849] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 21:45:08,850] {logging_mixin.py:95} INFO - [2019-11-17 21:45:08,850] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:45:08,857] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:45:08,876] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 21:45:08,880] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 01:00:00+00:00: scheduled__2007-10-29T01:00:00+00:00, externally triggered: False>
+[2019-11-17 21:45:08,908] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 21:45:08,910] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_versions 2007-10-29 01:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:45:08,912] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_dependencies 2007-10-29 01:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:45:08,914] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_projects 2007-10-29 01:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:45:08,925] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.088 seconds
+[2019-11-17 21:51:11,591] {scheduler_job.py:146} INFO - Started process (PID=8759) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:51:11,599] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 21:51:11,600] {logging_mixin.py:95} INFO - [2019-11-17 21:51:11,600] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:51:11,607] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:51:11,628] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 21:51:11,633] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 01:00:00+00:00: scheduled__2007-10-29T01:00:00+00:00, externally triggered: False>
+[2019-11-17 21:51:11,657] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 21:51:11,659] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_repositories_fact_table 2007-10-29 01:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:51:11,666] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.075 seconds
+[2019-11-17 21:52:03,995] {scheduler_job.py:146} INFO - Started process (PID=8784) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:52:04,002] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 21:52:04,002] {logging_mixin.py:95} INFO - [2019-11-17 21:52:04,002] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:52:04,010] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:52:04,030] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 21:52:04,035] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 01:00:00+00:00: scheduled__2007-10-29T01:00:00+00:00, externally triggered: False>
+[2019-11-17 21:52:04,057] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 21:52:04,060] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_projects_dim_table 2007-10-29 01:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:52:04,062] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_versions_dim_table 2007-10-29 01:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:52:04,064] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_dependencies_dim_table 2007-10-29 01:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:52:04,066] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_time_dim_table 2007-10-29 01:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:52:04,075] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.080 seconds
+[2019-11-17 21:54:25,249] {scheduler_job.py:146} INFO - Started process (PID=8826) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:54:25,256] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 21:54:25,257] {logging_mixin.py:95} INFO - [2019-11-17 21:54:25,257] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:54:25,264] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:54:25,288] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 21:54:25,293] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 01:00:00+00:00: scheduled__2007-10-29T01:00:00+00:00, externally triggered: False>
+[2019-11-17 21:54:25,309] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 21:54:25,311] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Run_data_quality_checks 2007-10-29 01:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:54:25,321] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.072 seconds
+[2019-11-17 21:55:47,699] {scheduler_job.py:146} INFO - Started process (PID=8851) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:55:47,707] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 21:55:47,707] {logging_mixin.py:95} INFO - [2019-11-17 21:55:47,707] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:55:47,715] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:55:47,736] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 21:55:47,741] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 01:00:00+00:00: scheduled__2007-10-29T01:00:00+00:00, externally triggered: False>
+[2019-11-17 21:55:47,754] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 21:55:47,756] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stop_execution 2007-10-29 01:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:55:47,763] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.064 seconds
+[2019-11-17 21:56:35,119] {scheduler_job.py:146} INFO - Started process (PID=8880) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:56:35,125] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 21:56:35,126] {logging_mixin.py:95} INFO - [2019-11-17 21:56:35,126] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:56:35,133] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:56:35,153] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 21:56:35,158] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 01:00:00+00:00: scheduled__2007-10-29T01:00:00+00:00, externally triggered: False>
+[2019-11-17 21:56:35,164] {logging_mixin.py:95} INFO - [2019-11-17 21:56:35,164] {dagrun.py:316} INFO - Marking run <DagRun udacity_dag @ 2007-10-29 01:00:00+00:00: scheduled__2007-10-29T01:00:00+00:00, externally triggered: False> successful
+[2019-11-17 21:56:35,167] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 21:56:35,171] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.052 seconds
+[2019-11-17 21:57:17,250] {scheduler_job.py:146} INFO - Started process (PID=8902) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:57:17,259] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 21:57:17,260] {logging_mixin.py:95} INFO - [2019-11-17 21:57:17,260] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:57:17,268] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:57:17,287] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 21:57:17,321] {scheduler_job.py:1265} INFO - Created <DagRun udacity_dag @ 2007-10-29T02:00:00+00:00: scheduled__2007-10-29T02:00:00+00:00, externally triggered: False>
+[2019-11-17 21:57:17,323] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 02:00:00+00:00: scheduled__2007-10-29T02:00:00+00:00, externally triggered: False>
+[2019-11-17 21:57:17,351] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 21:57:17,354] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Begin_execution 2007-10-29 02:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:57:17,361] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.112 seconds
+[2019-11-17 21:58:05,292] {scheduler_job.py:146} INFO - Started process (PID=8927) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:58:05,299] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 21:58:05,300] {logging_mixin.py:95} INFO - [2019-11-17 21:58:05,300] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:58:05,308] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:58:05,328] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 21:58:05,333] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 02:00:00+00:00: scheduled__2007-10-29T02:00:00+00:00, externally triggered: False>
+[2019-11-17 21:58:05,362] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 21:58:05,365] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_versions 2007-10-29 02:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:58:05,367] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_dependencies 2007-10-29 02:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:58:05,368] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_projects 2007-10-29 02:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 21:58:05,378] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.085 seconds
+[2019-11-17 22:04:20,740] {scheduler_job.py:146} INFO - Started process (PID=8968) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:04:20,747] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:04:20,748] {logging_mixin.py:95} INFO - [2019-11-17 22:04:20,748] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:04:20,756] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:04:20,776] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:04:20,781] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 02:00:00+00:00: scheduled__2007-10-29T02:00:00+00:00, externally triggered: False>
+[2019-11-17 22:04:20,806] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:04:20,809] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_repositories_fact_table 2007-10-29 02:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:04:20,817] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.077 seconds
+[2019-11-17 22:05:13,345] {scheduler_job.py:146} INFO - Started process (PID=8993) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:05:13,351] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:05:13,352] {logging_mixin.py:95} INFO - [2019-11-17 22:05:13,352] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:05:13,359] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:05:13,376] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:05:13,380] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 02:00:00+00:00: scheduled__2007-10-29T02:00:00+00:00, externally triggered: False>
+[2019-11-17 22:05:13,400] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:05:13,402] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_projects_dim_table 2007-10-29 02:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:05:13,404] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_versions_dim_table 2007-10-29 02:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:05:13,406] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_dependencies_dim_table 2007-10-29 02:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:05:13,408] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_time_dim_table 2007-10-29 02:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:05:13,415] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.070 seconds
+[2019-11-17 22:07:34,595] {scheduler_job.py:146} INFO - Started process (PID=9026) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:07:34,602] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:07:34,603] {logging_mixin.py:95} INFO - [2019-11-17 22:07:34,603] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:07:34,611] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:07:34,631] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:07:34,636] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 02:00:00+00:00: scheduled__2007-10-29T02:00:00+00:00, externally triggered: False>
+[2019-11-17 22:07:34,654] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:07:34,657] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Run_data_quality_checks 2007-10-29 02:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:07:34,665] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.070 seconds
+[2019-11-17 22:08:57,088] {scheduler_job.py:146} INFO - Started process (PID=9053) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:08:57,095] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:08:57,096] {logging_mixin.py:95} INFO - [2019-11-17 22:08:57,095] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:08:57,104] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:08:57,125] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:08:57,130] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 02:00:00+00:00: scheduled__2007-10-29T02:00:00+00:00, externally triggered: False>
+[2019-11-17 22:08:57,143] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:08:57,146] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stop_execution 2007-10-29 02:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:08:57,155] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.067 seconds
+[2019-11-17 22:09:44,506] {scheduler_job.py:146} INFO - Started process (PID=9077) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:09:44,513] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:09:44,514] {logging_mixin.py:95} INFO - [2019-11-17 22:09:44,513] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:09:44,522] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:09:44,542] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:09:44,546] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-29 02:00:00+00:00: scheduled__2007-10-29T02:00:00+00:00, externally triggered: False>
+[2019-11-17 22:09:44,553] {logging_mixin.py:95} INFO - [2019-11-17 22:09:44,553] {dagrun.py:316} INFO - Marking run <DagRun udacity_dag @ 2007-10-29 02:00:00+00:00: scheduled__2007-10-29T02:00:00+00:00, externally triggered: False> successful
+[2019-11-17 22:09:44,555] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:09:44,559] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.054 seconds
+[2019-11-17 22:10:26,656] {scheduler_job.py:146} INFO - Started process (PID=9100) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:10:26,663] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:10:26,663] {logging_mixin.py:95} INFO - [2019-11-17 22:10:26,663] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:10:26,670] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:10:26,688] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:10:26,765] {scheduler_job.py:1265} INFO - Created <DagRun udacity_dag @ 2007-10-30 00:00:00+00:00: scheduled__2007-10-30T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:10:26,775] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-30 00:00:00+00:00: scheduled__2007-10-30T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:10:26,801] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:10:26,804] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Begin_execution 2007-10-30 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:10:26,810] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.155 seconds
+[2019-11-17 22:11:14,098] {scheduler_job.py:146} INFO - Started process (PID=9124) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:11:14,106] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:11:14,106] {logging_mixin.py:95} INFO - [2019-11-17 22:11:14,106] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:11:14,115] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:11:14,134] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:11:14,139] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-30 00:00:00+00:00: scheduled__2007-10-30T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:11:14,167] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:11:14,169] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_versions 2007-10-30 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:11:14,171] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_dependencies 2007-10-30 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:11:14,173] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_projects 2007-10-30 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:11:14,179] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.081 seconds
+[2019-11-17 22:17:09,720] {scheduler_job.py:146} INFO - Started process (PID=9171) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:17:09,728] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:17:09,729] {logging_mixin.py:95} INFO - [2019-11-17 22:17:09,729] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:17:09,736] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:17:09,756] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:17:09,761] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-30 00:00:00+00:00: scheduled__2007-10-30T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:17:09,784] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:17:09,786] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_repositories_fact_table 2007-10-30 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:17:09,793] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.073 seconds
+[2019-11-17 22:18:02,334] {scheduler_job.py:146} INFO - Started process (PID=9196) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:18:02,343] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:18:02,343] {logging_mixin.py:95} INFO - [2019-11-17 22:18:02,343] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:18:02,350] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:18:02,370] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:18:02,375] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-30 00:00:00+00:00: scheduled__2007-10-30T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:18:02,396] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:18:02,399] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_projects_dim_table 2007-10-30 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:18:02,401] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_versions_dim_table 2007-10-30 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:18:02,403] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_dependencies_dim_table 2007-10-30 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:18:02,405] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_time_dim_table 2007-10-30 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:18:02,412] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.077 seconds
+[2019-11-17 22:20:33,789] {scheduler_job.py:146} INFO - Started process (PID=9233) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:20:33,798] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:20:33,799] {logging_mixin.py:95} INFO - [2019-11-17 22:20:33,798] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:20:33,806] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:20:33,826] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:20:33,831] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-30 00:00:00+00:00: scheduled__2007-10-30T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:20:33,846] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:20:33,849] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Run_data_quality_checks 2007-10-30 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:20:33,856] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.066 seconds
+[2019-11-17 22:21:51,315] {scheduler_job.py:146} INFO - Started process (PID=9258) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:21:51,323] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:21:51,323] {logging_mixin.py:95} INFO - [2019-11-17 22:21:51,323] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:21:51,330] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:21:51,351] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:21:51,356] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-30 00:00:00+00:00: scheduled__2007-10-30T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:21:51,371] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:21:51,373] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stop_execution 2007-10-30 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:21:51,380] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.065 seconds
+[2019-11-17 22:22:39,312] {scheduler_job.py:146} INFO - Started process (PID=9283) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:22:39,318] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:22:39,318] {logging_mixin.py:95} INFO - [2019-11-17 22:22:39,318] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:22:39,324] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:22:39,343] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:22:39,347] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-30 00:00:00+00:00: scheduled__2007-10-30T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:22:39,356] {logging_mixin.py:95} INFO - [2019-11-17 22:22:39,356] {dagrun.py:316} INFO - Marking run <DagRun udacity_dag @ 2007-10-30 00:00:00+00:00: scheduled__2007-10-30T00:00:00+00:00, externally triggered: False> successful
+[2019-11-17 22:22:39,358] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:22:39,362] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.050 seconds
+[2019-11-17 22:23:21,414] {scheduler_job.py:146} INFO - Started process (PID=9305) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:23:21,421] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:23:21,421] {logging_mixin.py:95} INFO - [2019-11-17 22:23:21,421] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:23:21,428] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:23:21,448] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:23:21,468] {scheduler_job.py:1265} INFO - Created <DagRun udacity_dag @ 2007-10-31 00:00:00+00:00: scheduled__2007-10-31T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:23:21,470] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-31 00:00:00+00:00: scheduled__2007-10-31T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:23:21,493] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:23:21,495] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Begin_execution 2007-10-31 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:23:21,503] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.089 seconds
+[2019-11-17 22:24:08,937] {scheduler_job.py:146} INFO - Started process (PID=9331) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:24:08,944] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:24:08,945] {logging_mixin.py:95} INFO - [2019-11-17 22:24:08,944] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:24:08,952] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:24:08,972] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:24:08,977] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-31 00:00:00+00:00: scheduled__2007-10-31T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:24:09,005] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:24:09,007] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_versions 2007-10-31 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:24:09,009] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_dependencies 2007-10-31 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:24:09,011] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_projects 2007-10-31 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:24:09,017] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.081 seconds
+[2019-11-17 22:30:05,481] {scheduler_job.py:146} INFO - Started process (PID=9386) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:30:05,489] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:30:05,490] {logging_mixin.py:95} INFO - [2019-11-17 22:30:05,490] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:30:05,498] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:30:05,521] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:30:05,526] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-31 00:00:00+00:00: scheduled__2007-10-31T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:30:05,552] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:30:05,554] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_repositories_fact_table 2007-10-31 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:30:05,561] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.081 seconds
+[2019-11-17 22:30:57,989] {scheduler_job.py:146} INFO - Started process (PID=9420) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:30:57,996] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:30:57,997] {logging_mixin.py:95} INFO - [2019-11-17 22:30:57,997] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:30:58,004] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:30:58,023] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:30:58,029] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-31 00:00:00+00:00: scheduled__2007-10-31T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:30:58,053] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:30:58,055] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_projects_dim_table 2007-10-31 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:30:58,057] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_versions_dim_table 2007-10-31 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:30:58,059] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_dependencies_dim_table 2007-10-31 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:30:58,061] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_time_dim_table 2007-10-31 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:30:58,067] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.078 seconds
+[2019-11-17 22:33:46,251] {scheduler_job.py:146} INFO - Started process (PID=9461) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:33:46,261] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:33:46,261] {logging_mixin.py:95} INFO - [2019-11-17 22:33:46,261] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:33:46,269] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:33:46,291] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:33:46,301] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-31 00:00:00+00:00: scheduled__2007-10-31T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:33:46,333] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:33:46,336] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Run_data_quality_checks 2007-10-31 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:33:46,345] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.094 seconds
+[2019-11-17 22:35:13,812] {scheduler_job.py:146} INFO - Started process (PID=9487) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:35:13,819] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:35:13,820] {logging_mixin.py:95} INFO - [2019-11-17 22:35:13,819] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:35:13,828] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:35:13,847] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:35:13,852] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-31 00:00:00+00:00: scheduled__2007-10-31T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:35:13,865] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:35:13,867] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stop_execution 2007-10-31 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:35:13,874] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.063 seconds
+[2019-11-17 22:36:01,432] {scheduler_job.py:146} INFO - Started process (PID=9512) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:36:01,439] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:36:01,440] {logging_mixin.py:95} INFO - [2019-11-17 22:36:01,440] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:36:01,448] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:36:01,467] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:36:01,472] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-10-31 00:00:00+00:00: scheduled__2007-10-31T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:36:01,478] {logging_mixin.py:95} INFO - [2019-11-17 22:36:01,478] {dagrun.py:316} INFO - Marking run <DagRun udacity_dag @ 2007-10-31 00:00:00+00:00: scheduled__2007-10-31T00:00:00+00:00, externally triggered: False> successful
+[2019-11-17 22:36:01,480] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:36:01,485] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.053 seconds
+[2019-11-17 22:36:43,561] {scheduler_job.py:146} INFO - Started process (PID=9534) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:36:43,568] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:36:43,568] {logging_mixin.py:95} INFO - [2019-11-17 22:36:43,568] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:36:43,576] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:36:43,597] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:36:43,616] {scheduler_job.py:1265} INFO - Created <DagRun udacity_dag @ 2007-11-01 00:00:00+00:00: scheduled__2007-11-01T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:36:43,618] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-11-01 00:00:00+00:00: scheduled__2007-11-01T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:36:43,642] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:36:43,644] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Begin_execution 2007-11-01 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:36:43,651] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.091 seconds
+[2019-11-17 22:37:31,038] {scheduler_job.py:146} INFO - Started process (PID=9558) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:37:31,046] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:37:31,046] {logging_mixin.py:95} INFO - [2019-11-17 22:37:31,046] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:37:31,054] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:37:31,074] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:37:31,079] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-11-01 00:00:00+00:00: scheduled__2007-11-01T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:37:31,107] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:37:31,109] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_versions 2007-11-01 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:37:31,111] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_dependencies 2007-11-01 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:37:31,113] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Stage_projects 2007-11-01 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:37:31,122] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.084 seconds
+[2019-11-17 22:43:41,806] {scheduler_job.py:146} INFO - Started process (PID=9603) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:43:41,813] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 22:43:41,813] {logging_mixin.py:95} INFO - [2019-11-17 22:43:41,813] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:43:41,821] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:43:41,842] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 22:43:41,847] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-11-01 00:00:00+00:00: scheduled__2007-11-01T00:00:00+00:00, externally triggered: False>
+[2019-11-17 22:43:41,870] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 22:43:41,872] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_repositories_fact_table 2007-11-01 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 22:43:41,879] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.073 seconds
+[2019-11-17 23:00:33,859] {scheduler_job.py:146} INFO - Started process (PID=9640) to work on /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 23:00:33,866] {scheduler_job.py:1520} INFO - Processing file /Users/likejun/airflow/dags/udacity_dag.py for tasks to queue
+[2019-11-17 23:00:33,867] {logging_mixin.py:95} INFO - [2019-11-17 23:00:33,867] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 23:00:33,873] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['udacity_dag']) retrieved from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 23:00:33,893] {scheduler_job.py:1255} INFO - Processing udacity_dag
+[2019-11-17 23:00:33,898] {scheduler_job.py:729} INFO - Examining DAG run <DagRun udacity_dag @ 2007-11-01 00:00:00+00:00: scheduled__2007-11-01T00:00:00+00:00, externally triggered: False>
+[2019-11-17 23:00:33,919] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: udacity_dag> because no tasks in DAG have SLAs
+[2019-11-17 23:00:33,922] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_projects_dim_table 2007-11-01 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 23:00:33,924] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_versions_dim_table 2007-11-01 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 23:00:33,926] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_dependencies_dim_table 2007-11-01 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 23:00:33,928] {scheduler_job.py:1596} INFO - Creating / updating <TaskInstance: udacity_dag.Load_time_dim_table 2007-11-01 00:00:00+00:00 [scheduled]> in ORM
+[2019-11-17 23:00:33,935] {scheduler_job.py:152} INFO - Processing /Users/likejun/airflow/dags/udacity_dag.py took 0.076 seconds

@@ -8,15 +8,15 @@ CREATE TABLE IF NOT EXISTS public.repository_fact (
     repo VARCHAR(256),
     version_id INT4,
     project_id INT4,
-    create_time TIMESTAMP NOT NULL,
+    create_time TIMESTAMP,
     dependency_id INT4,
     PRIMARY KEY(repository_id)
 );
 
 CREATE TABLE IF NOT EXISTS public.version_dim (
     version_id INT4 NOT NULL,
-    number INT4,
-    publish_time TIMESTAMP NOT NULL,
+    number VARCHAR(256),
+    publish_time TIMESTAMP,
     PRIMARY KEY(version_id)
 );
 
@@ -132,7 +132,7 @@ CREATE TABLE IF NOT EXISTS public.staging_versions (
     project_name VARCHAR(256),
     project_id INT4,
     "number" VARCHAR(256),
-    published_timestamp TIMESTAMP NOT NULL,
-    created_timestamp TIMESTAMP NOT NULL,
-    updated_timestamp TIMESTAMP NOT NULL
+    published_timestamp TIMESTAMP,
+    created_timestamp TIMESTAMP,
+    updated_timestamp TIMESTAMP
 );

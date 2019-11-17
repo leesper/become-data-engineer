@@ -20,10 +20,10 @@ class QualityCheckOperator(BaseOperator):
         self.log.info('QualityCheckOperator for {}'.format(self.tables))
         pg_hook = PostgresHook(self.redshift_conn_id)
         for table in self.tables:
-            records = pg_hook.get_records(f"SELECT COUNT(*) FROM {table}")
+            records = pg_hook.get_records("SELECT COUNT(*) FROM {}".format(table))
             if len(records) < 1 or len(records[0]) < 1:
-                raise ValueError(f"data quality check failed, {table} returns no results")
+                raise ValueError("data quality check failed, {} returns no results".format(table))
             num_records = records[0][0]
             if num_records < 1:
-                raise ValueError(f"data quality check failed, {table} contains no records")
-            self.log.info(f"data quality check on {table} check passed with {records[0][0]} records")
+                raise ValueError("data quality check failed, {} contains no records".format(table))
+            self.log.info("data quality check on {} check passed with {} records".format(table, records[0][0]))

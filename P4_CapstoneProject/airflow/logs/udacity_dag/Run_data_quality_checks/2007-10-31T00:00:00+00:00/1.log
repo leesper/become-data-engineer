@@ -1,0 +1,32 @@
+[2019-11-17 22:33:49,431] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: udacity_dag.Run_data_quality_checks 2007-10-31T00:00:00+00:00 [queued]>
+[2019-11-17 22:33:49,436] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: udacity_dag.Run_data_quality_checks 2007-10-31T00:00:00+00:00 [queued]>
+[2019-11-17 22:33:49,436] {taskinstance.py:838} INFO - 
+--------------------------------------------------------------------------------
+[2019-11-17 22:33:49,436] {taskinstance.py:839} INFO - Starting attempt 1 of 4
+[2019-11-17 22:33:49,436] {taskinstance.py:840} INFO - 
+--------------------------------------------------------------------------------
+[2019-11-17 22:33:49,440] {taskinstance.py:859} INFO - Executing <Task(QualityCheckOperator): Run_data_quality_checks> on 2007-10-31T00:00:00+00:00
+[2019-11-17 22:33:49,441] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'udacity_dag', 'Run_data_quality_checks', '2007-10-31T00:00:00+00:00', '--job_id', '315', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/udacity_dag.py', '--cfg_path', '/var/folders/8q/nyxhvd6d55nfqjdbrybk6jpw0000gn/T/tmp1ndrolku']
+[2019-11-17 22:33:50,134] {base_task_runner.py:115} INFO - Job 315: Subtask Run_data_quality_checks /Users/likejun/anaconda3/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2019-11-17 22:33:50,134] {base_task_runner.py:115} INFO - Job 315: Subtask Run_data_quality_checks   """)
+[2019-11-17 22:33:50,216] {base_task_runner.py:115} INFO - Job 315: Subtask Run_data_quality_checks [2019-11-17 22:33:50,216] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-11-17 22:33:50,518] {base_task_runner.py:115} INFO - Job 315: Subtask Run_data_quality_checks [2019-11-17 22:33:50,517] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 22:33:50,533] {base_task_runner.py:115} INFO - Job 315: Subtask Run_data_quality_checks [2019-11-17 22:33:50,533] {cli.py:516} INFO - Running <TaskInstance: udacity_dag.Run_data_quality_checks 2007-10-31T00:00:00+00:00 [running]> on host likejundeMacBook-Pro.local
+[2019-11-17 22:33:50,539] {quality_check.py:20} INFO - QualityCheckOperator for ['staging_versions', 'staging_dependencies', 'staging_projects', 'repository_fact', 'version_dim', 'dependency_dim', 'project_dim', 'time_dim']
+[2019-11-17 22:33:50,544] {logging_mixin.py:95} INFO - [[34m2019-11-17 22:33:50,544[0m] {[34mbase_hook.py:[0m84} INFO[0m - Using connection to: [1mid: redshift. Host: redshift-cluster.chjcdyihped1.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: XXXXXXXX, extra: {}[0m[0m
+[2019-11-17 22:33:54,464] {quality_check.py:29} INFO - data quality check on staging_versions check passed with 72184840 records
+[2019-11-17 22:33:54,469] {logging_mixin.py:95} INFO - [[34m2019-11-17 22:33:54,469[0m] {[34mbase_hook.py:[0m84} INFO[0m - Using connection to: [1mid: redshift. Host: redshift-cluster.chjcdyihped1.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: XXXXXXXX, extra: {}[0m[0m
+[2019-11-17 22:33:59,430] {quality_check.py:29} INFO - data quality check on staging_dependencies check passed with 409919888 records
+[2019-11-17 22:33:59,432] {logging_mixin.py:95} INFO - [[34m2019-11-17 22:33:59,432[0m] {[34mbase_hook.py:[0m84} INFO[0m - Using connection to: [1mid: redshift. Host: redshift-cluster.chjcdyihped1.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: XXXXXXXX, extra: {}[0m[0m
+[2019-11-17 22:34:03,505] {quality_check.py:29} INFO - data quality check on staging_projects check passed with 17722008 records
+[2019-11-17 22:34:03,509] {logging_mixin.py:95} INFO - [[34m2019-11-17 22:34:03,509[0m] {[34mbase_hook.py:[0m84} INFO[0m - Using connection to: [1mid: redshift. Host: redshift-cluster.chjcdyihped1.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: XXXXXXXX, extra: {}[0m[0m
+[2019-11-17 22:34:08,769] {quality_check.py:29} INFO - data quality check on repository_fact check passed with 209385 records
+[2019-11-17 22:34:08,773] {logging_mixin.py:95} INFO - [[34m2019-11-17 22:34:08,773[0m] {[34mbase_hook.py:[0m84} INFO[0m - Using connection to: [1mid: redshift. Host: redshift-cluster.chjcdyihped1.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: XXXXXXXX, extra: {}[0m[0m
+[2019-11-17 22:34:11,906] {quality_check.py:29} INFO - data quality check on version_dim check passed with 3542 records
+[2019-11-17 22:34:11,911] {logging_mixin.py:95} INFO - [[34m2019-11-17 22:34:11,910[0m] {[34mbase_hook.py:[0m84} INFO[0m - Using connection to: [1mid: redshift. Host: redshift-cluster.chjcdyihped1.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: XXXXXXXX, extra: {}[0m[0m
+[2019-11-17 22:34:18,257] {quality_check.py:29} INFO - data quality check on dependency_dim check passed with 409919888 records
+[2019-11-17 22:34:18,262] {logging_mixin.py:95} INFO - [[34m2019-11-17 22:34:18,261[0m] {[34mbase_hook.py:[0m84} INFO[0m - Using connection to: [1mid: redshift. Host: redshift-cluster.chjcdyihped1.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: XXXXXXXX, extra: {}[0m[0m
+[2019-11-17 22:34:24,401] {quality_check.py:29} INFO - data quality check on project_dim check passed with 285 records
+[2019-11-17 22:34:24,406] {logging_mixin.py:95} INFO - [[34m2019-11-17 22:34:24,406[0m] {[34mbase_hook.py:[0m84} INFO[0m - Using connection to: [1mid: redshift. Host: redshift-cluster.chjcdyihped1.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: XXXXXXXX, extra: {}[0m[0m
+[2019-11-17 22:34:30,541] {quality_check.py:29} INFO - data quality check on time_dim check passed with 285 records
+[2019-11-17 22:34:34,483] {logging_mixin.py:95} INFO - [[34m2019-11-17 22:34:34,482[0m] {[34mlocal_task_job.py:[0m105} INFO[0m - Task exited with return code 0[0m

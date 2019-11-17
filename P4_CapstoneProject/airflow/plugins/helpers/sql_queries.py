@@ -18,7 +18,8 @@ class SqlQueries:
             ON sp.id = sv.project_id
             JOIN staging_dependencies sd
             ON sp.id = sd."project id"
-            WHERE sp."repository id" IS NOT NULL)
+            WHERE sp."repository id" IS NOT NULL 
+            AND TO_CHAR(sp."repository created timestamp", 'YYYY-MM-DD') = '{}')
     """)
 
     version_table_select = ("""
@@ -29,7 +30,8 @@ class SqlQueries:
             sv.published_timestamp
         FROM staging_versions sv
         JOIN staging_projects sp
-        ON sv.project_id = sp.id)
+        ON sv.project_id = sp.id
+        WHERE TO_CHAR(sp."repository created timestamp", 'YYYY-MM-DD') = '{}')
     """)
 
     project_table_select = ("""
@@ -42,7 +44,8 @@ class SqlQueries:
             language,
             licenses,
             status
-        FROM staging_projects)
+        FROM staging_projects
+        WHERE TO_CHAR("repository created timestamp", 'YYYY-MM-DD') = '{}')
     """)
 
     dependency_table_select = ("""
@@ -64,5 +67,6 @@ class SqlQueries:
             EXTRACT(month FROM create_time),
             EXTRACT(year FROM create_time),
             EXTRACT(dayofweek FROM create_time)
-        FROM staging_projects)
+        FROM staging_projects
+        WHERE TO_CHAR("repository created timestamp", 'YYYY-MM-DD') = '{}')
     """)

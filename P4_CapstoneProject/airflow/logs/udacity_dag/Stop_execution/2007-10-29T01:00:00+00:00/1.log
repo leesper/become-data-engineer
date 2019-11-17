@@ -1,0 +1,15 @@
+[2019-11-17 21:55:50,782] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: udacity_dag.Stop_execution 2007-10-29T01:00:00+00:00 [queued]>
+[2019-11-17 21:55:50,788] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: udacity_dag.Stop_execution 2007-10-29T01:00:00+00:00 [queued]>
+[2019-11-17 21:55:50,788] {taskinstance.py:838} INFO - 
+--------------------------------------------------------------------------------
+[2019-11-17 21:55:50,788] {taskinstance.py:839} INFO - Starting attempt 1 of 4
+[2019-11-17 21:55:50,788] {taskinstance.py:840} INFO - 
+--------------------------------------------------------------------------------
+[2019-11-17 21:55:50,794] {taskinstance.py:859} INFO - Executing <Task(DummyOperator): Stop_execution> on 2007-10-29T01:00:00+00:00
+[2019-11-17 21:55:50,794] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'udacity_dag', 'Stop_execution', '2007-10-29T01:00:00+00:00', '--job_id', '283', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/udacity_dag.py', '--cfg_path', '/var/folders/8q/nyxhvd6d55nfqjdbrybk6jpw0000gn/T/tmpivrucyq5']
+[2019-11-17 21:55:51,479] {base_task_runner.py:115} INFO - Job 283: Subtask Stop_execution /Users/likejun/anaconda3/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2019-11-17 21:55:51,480] {base_task_runner.py:115} INFO - Job 283: Subtask Stop_execution   """)
+[2019-11-17 21:55:51,560] {base_task_runner.py:115} INFO - Job 283: Subtask Stop_execution [2019-11-17 21:55:51,559] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-11-17 21:55:51,842] {base_task_runner.py:115} INFO - Job 283: Subtask Stop_execution [2019-11-17 21:55:51,842] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/udacity_dag.py
+[2019-11-17 21:55:51,857] {base_task_runner.py:115} INFO - Job 283: Subtask Stop_execution [2019-11-17 21:55:51,857] {cli.py:516} INFO - Running <TaskInstance: udacity_dag.Stop_execution 2007-10-29T01:00:00+00:00 [running]> on host likejundeMacBook-Pro.local
+[2019-11-17 21:55:55,777] {logging_mixin.py:95} INFO - [[34m2019-11-17 21:55:55,777[0m] {[34mlocal_task_job.py:[0m105} INFO[0m - Task exited with return code 0[0m

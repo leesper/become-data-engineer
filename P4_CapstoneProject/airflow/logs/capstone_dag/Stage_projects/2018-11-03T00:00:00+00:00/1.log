@@ -1,0 +1,45 @@
+[2019-11-02 22:11:00,481] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: capstone_dag.Stage_projects 2018-11-03T00:00:00+00:00 [queued]>
+[2019-11-02 22:11:00,485] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: capstone_dag.Stage_projects 2018-11-03T00:00:00+00:00 [queued]>
+[2019-11-02 22:11:00,485] {taskinstance.py:838} INFO - 
+--------------------------------------------------------------------------------
+[2019-11-02 22:11:00,485] {taskinstance.py:839} INFO - Starting attempt 1 of 4
+[2019-11-02 22:11:00,485] {taskinstance.py:840} INFO - 
+--------------------------------------------------------------------------------
+[2019-11-02 22:11:00,490] {taskinstance.py:859} INFO - Executing <Task(StageToRedshiftOperator): Stage_projects> on 2018-11-03T00:00:00+00:00
+[2019-11-02 22:11:00,490] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'capstone_dag', 'Stage_projects', '2018-11-03T00:00:00+00:00', '--job_id', '6', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/capstone_dag.py', '--cfg_path', '/var/folders/8q/nyxhvd6d55nfqjdbrybk6jpw0000gn/T/tmppsv28whi']
+[2019-11-02 22:11:01,228] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects /Users/likejun/anaconda3/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2019-11-02 22:11:01,229] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects   """)
+[2019-11-02 22:11:01,321] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects [2019-11-02 22:11:01,320] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-11-02 22:11:01,638] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects [2019-11-02 22:11:01,638] {dagbag.py:90} INFO - Filling up the DagBag from /Users/likejun/airflow/dags/capstone_dag.py
+[2019-11-02 22:11:01,654] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects [2019-11-02 22:11:01,653] {cli.py:516} INFO - Running <TaskInstance: capstone_dag.Stage_projects 2018-11-03T00:00:00+00:00 [running]> on host likejundeMacBook-Pro.local
+[2019-11-02 22:11:01,661] {staging_redshift.py:33} INFO - StageToRedshiftOperator for staging_projects on 2018-11-03T00:00:00+00:00
+[2019-11-02 22:11:01,678] {logging_mixin.py:95} INFO - [[34m2019-11-02 22:11:01,678[0m] {[34mconnectionpool.py:[0m203} INFO[0m - Starting new HTTP connection (1): 127.0.0.1[0m
+[2019-11-02 22:11:01,680] {taskinstance.py:1051} ERROR - 'NoneType' object has no attribute 'get_frozen_credentials'
+Traceback (most recent call last):
+  File "/Users/likejun/anaconda3/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 926, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/Users/likejun/airflow/plugins/operators/staging_redshift.py", line 37, in execute
+    credentials = a_hook.get_credentials()
+  File "/Users/likejun/anaconda3/lib/python3.7/site-packages/airflow/contrib/hooks/aws_hook.py", line 192, in get_credentials
+    return session.get_credentials().get_frozen_credentials()
+AttributeError: 'NoneType' object has no attribute 'get_frozen_credentials'
+[2019-11-02 22:11:01,681] {taskinstance.py:1074} INFO - Marking task as UP_FOR_RETRY
+[2019-11-02 22:11:01,691] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects Traceback (most recent call last):
+[2019-11-02 22:11:01,692] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects   File "/Users/likejun/anaconda3/bin/airflow", line 32, in <module>
+[2019-11-02 22:11:01,692] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects     args.func(args)
+[2019-11-02 22:11:01,692] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects   File "/Users/likejun/anaconda3/lib/python3.7/site-packages/airflow/utils/cli.py", line 74, in wrapper
+[2019-11-02 22:11:01,692] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects     return f(*args, **kwargs)
+[2019-11-02 22:11:01,692] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects   File "/Users/likejun/anaconda3/lib/python3.7/site-packages/airflow/bin/cli.py", line 522, in run
+[2019-11-02 22:11:01,692] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects     _run(args, dag, ti)
+[2019-11-02 22:11:01,692] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects   File "/Users/likejun/anaconda3/lib/python3.7/site-packages/airflow/bin/cli.py", line 440, in _run
+[2019-11-02 22:11:01,692] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects     pool=args.pool,
+[2019-11-02 22:11:01,692] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects   File "/Users/likejun/anaconda3/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+[2019-11-02 22:11:01,692] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects     return func(*args, **kwargs)
+[2019-11-02 22:11:01,692] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects   File "/Users/likejun/anaconda3/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 926, in _run_raw_task
+[2019-11-02 22:11:01,692] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects     result = task_copy.execute(context=context)
+[2019-11-02 22:11:01,692] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects   File "/Users/likejun/airflow/plugins/operators/staging_redshift.py", line 37, in execute
+[2019-11-02 22:11:01,692] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects     credentials = a_hook.get_credentials()
+[2019-11-02 22:11:01,692] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects   File "/Users/likejun/anaconda3/lib/python3.7/site-packages/airflow/contrib/hooks/aws_hook.py", line 192, in get_credentials
+[2019-11-02 22:11:01,692] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects     return session.get_credentials().get_frozen_credentials()
+[2019-11-02 22:11:01,692] {base_task_runner.py:115} INFO - Job 6: Subtask Stage_projects AttributeError: 'NoneType' object has no attribute 'get_frozen_credentials'
+[2019-11-02 22:11:05,489] {logging_mixin.py:95} INFO - [[34m2019-11-02 22:11:05,488[0m] {[34mlocal_task_job.py:[0m105} INFO[0m - Task exited with return code 1[0m

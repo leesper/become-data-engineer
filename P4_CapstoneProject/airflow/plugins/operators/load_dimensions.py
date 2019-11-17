@@ -24,10 +24,10 @@ class LoadDimensionOperator(BaseOperator):
 
         # load records using sql_queries
         lookup = {
-            'version_dim': SqlQueries.version_table_select,
-            'project_dim': SqlQueries.project_table_select,
-            'dependency_dim ': SqlQueries.dependency_table_select,
-            'time_dim': SqlQueries.time_table_select,
+            'version_dim': SqlQueries.version_table_select.format(context['execution_date'].to_date_string()),
+            'project_dim': SqlQueries.project_table_select.format(context['execution_date'].to_date_string()),
+            'dependency_dim': SqlQueries.dependency_table_select,
+            'time_dim': SqlQueries.time_table_select.format(context['execution_date'].to_date_string()),
         }
         pg_hook = PostgresHook('redshift')
         # records = pg_hook.get_records(lookup[self.table])
