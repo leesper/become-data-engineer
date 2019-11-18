@@ -1,3 +1,0 @@
-BoltsFramework/Bolts-ObjC
-VerbalExpressions/JSVerbalExpressions
-angular/angular
